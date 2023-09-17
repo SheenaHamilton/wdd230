@@ -2,10 +2,10 @@
 
 :root {
     /* change the values below to your colors from your palette */
-    --primary-color: #FDFCDC;
+    --primary-color: #FFFFFF;
     --secondary-color: #0081A7;
-    --accent1-color: #00AFB9;
-    --accent2-color: #F07167;
+    --accent1-color: #00b4c5;
+    --accent2-color: #B51963;
 
     /* change the values below to your chosen font(s) */
     --heading-font:  'Parisienne', cursive;
@@ -28,14 +28,14 @@ header img {
     width: 30%;
     padding: 10px;
     margin: 10px 0px 10px auto;
-    border: 4px solid var(--accent2-color);
+    border: 6px solid var(--secondary-color);
+    background-color: white;
 }
 
 header h1 {
     display: block;
     font-family: var(--heading-font);
     font-size: xxx-large;
-    color: var(--primary-color);
     margin:auto auto auto 20px;
 }
 
@@ -78,7 +78,6 @@ h2 {
 
 .card h3 {
     font-family: var(--heading-font);
-    color: var(--primary-color);
     font-size: xx-large;
     text-align: center;
     background-color: var(--accent1-color);
