@@ -2,10 +2,10 @@
 
 :root {
     /* change the values below to your colors from your palette */
-    --primary-color: #FFFFFF;
-    --secondary-color: #009eb0;
-    --accent1-color: #0073e6;
-    --accent2-color: #B51963;
+    --primary-color: #000000;
+    --secondary-color: #109ac0;
+    --accent1-color: #0b5d74;
+    --accent2-color: #a3d0dd;
 
     /* change the values below to your chosen font(s) */
     --heading-font:  'Parisienne', cursive;
@@ -39,6 +39,7 @@ header h1 {
 }
 
 nav, footer{
+    
     text-align: center;
     background-color: var(--accent2-color);
     padding: 10px;
@@ -46,17 +47,24 @@ nav, footer{
     color: var(--primary-color);
 }
 
-nav a {
-    color: var(--primary-color);
+a {
     text-decoration: none;
+    color: var(--accent1-color);
+}
+
+nav a {
+    display: block;
+    color: var(--primary-colorr);
+    font-weight:bolder;
     padding: 15px;
 }
 
 nav a:hover {
-    background-color:var(--primary-color);
-    color:var(--accent2-color);
-    border: 2px solid var(--accent2-color);
+    background-color:var(--secondary-color);
+    color:white;
+    border: 2px solid white;
 }
+
 
 body {
     width: 80%;
