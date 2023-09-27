@@ -1,0 +1,12 @@
+@media screen and (min-width:300px) and (max-width:899px){
+
+    body {
+        width:100%;
+    }
+    main {
+        display: grid;
+        grid-template-columns: 90%;
+        width: 100%;
+    }
+
+}

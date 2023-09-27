@@ -1,0 +1,13 @@
+@media screen and (min-width:900px) and (max-width:1099px) {
+
+    main {
+        display: grid;
+        grid-template-columns: 45% 45%;
+        column-gap: 2em;
+    }
+    
+    #spancards {
+        grid-column: 1/3;
+        
+    }
+}
