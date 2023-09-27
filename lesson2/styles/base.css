@@ -113,10 +113,15 @@ main {
     font-size: large;
 
 }
-footer {
+footer{
     text-align: center;
     background-color: var(--secondary-color);
     padding: 20px;
-    font-size: large;
-    color: var(--accent1B-color)
 }
+
+ footer p {
+     font-family: var(--heading-font);
+     font-size: x-large;
+     font-weight: 500;
+     color: var(--accent1B-color);
+ }
