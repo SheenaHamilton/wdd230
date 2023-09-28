@@ -51,8 +51,8 @@ main {
     width: 80%;
     display: grid;
     grid-template-columns: 1fr;
-    row-gap: 60px;
-    margin: 8% auto 8% auto;
+    row-gap: 40px;
+    margin: auto;
     justify-content: center;
 }
 

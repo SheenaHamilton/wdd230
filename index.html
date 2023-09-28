@@ -23,7 +23,8 @@
         <h1>Sheena Hamilton</h1>
     </header>
     <nav>
-        <ul><li><a href="#">Home</a></li>
+        <button id="hamburgermenu"></button>
+        <ul id="nav"><li><a href="#" class="active">Home</a></li>
             <li><a href="chamber/siteplan.html">Site Plan</a></li>
             <li><a href="chamber/">Chamber</a></li>
             <li><a href="https://www.byui.edu/" target="_blank">BYU-Idaho</a></li>
@@ -54,11 +55,19 @@
             <p>[Number of Visits]</p>
             <p>[Other]</p>
         </section>
+       <section class="map" >
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9771.487547462599!2d-110.08304237433435!3d54.35615649036906!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x53a7c5929b33887b%3A0x16b2897281cb50a7!2sCherry%20Grove%2C%20AB%20T0A%200T0!5e0!3m2!1sen!2sca!4v1695880166512!5m2!1sen!2sca"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+            <h3>Cherry Grove, Alberta</h3>
+        </section>
     </main>
     <footer>
         <p >&copy; <span id="currentYear"></span> ✵ Sheena Hamilton 🇨🇦 Alberta, Canada</p>
         <p id="lastModified"></p>
     </footer>
 <script src="scripts/getdates.js"></script>
+<script src="scripts/hamburgermenu.js"></script>
 </body>
 </html>
