@@ -130,15 +130,11 @@ nav a:hover {
     justify-content: center;
 
     grid-template-columns: repeat(8, 12%);
-    grid-template-rows: 3em 1.5em 1.5em 3em 1.5em 3em 1.5em 3em;
+    grid-template-rows: 3em 1.5em 1.5em 3em;
     grid-template-areas: ". . . home home . . ." 
         ". . . . top . . ." 
         ". left left left right right right ." 
         "page2 page2 . page3 page3 . page4 page4" 
-        ". spaces1 . . . . . ." 
-        "page2a page2a . . . . . ." 
-        ". spaces2 . . . . . ." 
-        "page2b page2b . . . . . .";
 }
 
 .sitemap>div {
@@ -157,18 +153,6 @@ nav a:hover {
     grid-area: page2;
     background-color: #ccc;
     line-height: 3em;
-}
-
-.sm-page2a {
-    grid-area: page2a;
-    background-color: #ccc;
-    line-height: 2em;
-}
-
-.sm-page2b {
-    grid-area: page2b;
-    background-color: #ccc;
-    line-height: 2em;
 }
 
 .sm-page3 {
@@ -199,16 +183,6 @@ nav a:hover {
     border-top: 1px solid black;
     border-left: 1px solid black;
     border-right: 1px solid black;
-}
-
-.spaces1 {
-    grid-area: spaces1;
-    border-left: 1px solid;
-}
-
-.spaces2 {
-    grid-area: spaces2;
-    border-left: 1px solid;
 }
 
 .wireframe {
