@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Gabarito&display=swap');
+
+:root {
+    /* Color Palette */
+    --primary-color: #1D3557;
+    --secondary-color: #457B9D;
+    --accent1-color: #A8DADC;
+    --accent2-color: #F1FAEE;
+    --accent3-color: #C1121F;
+
+    /* Site Fonts */
+    --heading-font: 'Dancing Script', cursive;
+    --heading-paragraph-font: 'Gabarito', cursive;
+
+    --navcolor: white;
+    --navbackground: var(--accent2-color);
+    --navhighlight: var(--primary-color);
+}
+
+body {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 4em;
+    font-size: 18px;
+}
+
+.cherry::first-line {
+    color: var(--accent3-color);
+}
+.cherry::before{
+    content: '\1F352';
+}
+
+.center {
+    text-align: center;
+}
+
+h1, h2 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+}
+
+h3 {
+    font-family: var(--heading-paragraph-font);
+    color: var(--secondary-color);
+}
+
+hr {
+    height: 2px;
+    background: var(--primary-color);
+    margin: 0px 0px 50px 0px;
+}
+
+header p {
+    text-align: center;
+    background-color: var(--accent1-color);
+}
+
+
+p {
+    font-family: var(--paragraph-font);
+    color: var(--paragraph-color-on-white);
+    padding: 1em;
+}
+
+.colors {
+    width: 100%;
+    min-width: 350px;
+    margin: 30px auto;
+    text-align: center;
+}
+
+.colors th {
+    background-color: #999;
+}
+
+.colors td {
+    width: 20%;
+    height: 3em;
+}
+
+.primary {
+    background-color: var(--primary-color);
+}
+
+.secondary {
+    background-color: var(--secondary-color);
+}
+
+.accent1 {
+    background-color: var(--accent1-color);
+}
+
+.accent2 {
+    background-color: var(--accent2-color);
+}
+
+.accent3 {
+    background-color: var(--accent3-color);
+}
+
+nav {
+    background-color: var(--navbackground);
+    line-height: 3em;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+nav {
+    list-style-type: none;
+    display: flex;
+
+}
+
+nav a {
+    padding: 1em;
+    min-width: 120px;
+    text-decoration: none;
+    padding: 10px;
+    color: var(--nav-link-color);
+
+}
+
+nav a:hover {
+    background-color: var(--navhighlight);
+}
+
+.sitemap {
+    display: grid;
+    justify-content: center;
+
+    grid-template-columns: repeat(8, 12%);
+    grid-template-rows: 3em 1.5em 1.5em 3em 1.5em 3em 1.5em 3em;
+    grid-template-areas: ". . . home home . . ." 
+        ". . . . top . . ." 
+        ". left left left right right right ." 
+        "page2 page2 . page3 page3 . page4 page4" 
+        ". spaces1 . . . . . ." 
+        "page2a page2a . . . . . ." 
+        ". spaces2 . . . . . ." 
+        "page2b page2b . . . . . .";
+}
+
+.sitemap>div {
+
+    text-align: center;
+
+}
+
+.sm-home {
+    grid-area: home;
+    background-color: #ccc;
+    line-height: 3em;
+}
+
+.sm-page2 {
+    grid-area: page2;
+    background-color: #ccc;
+    line-height: 3em;
+}
+
+.sm-page2a {
+    grid-area: page2a;
+    background-color: #ccc;
+    line-height: 2em;
+}
+
+.sm-page2b {
+    grid-area: page2b;
+    background-color: #ccc;
+    line-height: 2em;
+}
+
+.sm-page3 {
+    grid-area: page3;
+    background-color: #ccc;
+    line-height: 3em;
+}
+
+.sm-page4 {
+    grid-area: page4;
+    background-color: #ccc;
+    line-height: 3em;
+}
+
+.top {
+    grid-area: top;
+    border-left: 1px solid;
+}
+
+.left {
+    grid-area: left;
+    border-top: 1px solid;
+    border-left: 1px solid;
+}
+
+.right {
+    grid-area: right;
+    border-top: 1px solid black;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+}
+
+.spaces1 {
+    grid-area: spaces1;
+    border-left: 1px solid;
+}
+
+.spaces2 {
+    grid-area: spaces2;
+    border-left: 1px solid;
+}
+
+.wireframe {
+    max-width: 600px;
+    border: 1px solid grey;
+    padding: 10px;
+    box-shadow: 5px 10px 18px #888888;
+}
+
+.wireframe-sm {
+    max-width: 300px;
+    border: 1px solid grey;
+    padding: 10px;
+    box-shadow: 5px 10px 18px #888888;
+}
