@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Gabarito&display=swap');
+
+:root {
+    /* Color Palette */
+    --primary-color: #1D3557;
+    --secondary-color: #457B9D;
+    --accent1-color: #A8DADC;
+    --accent2-color: #F1FAEE;
+    --accent3-color: #C1121F;
+
+    /* Site Fonts */
+    --heading-font: 'Dancing Script', cursive;
+    --heading-paragraph-font: 'Gabarito', cursive;
+
+    --navcolor: white;
+    --navbackground: var(--accent2-color);
+    --navhighlight: var(--primary-color);
+}
+
+body {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 4em;
+    font-size: 18px;
+}
+
+.cherry::first-line {
+    color: var(--accent3-color);
+}
+
+.cherry::before {
+    content: '\1F352';
+}
+
+.center {
+    text-align: center;
+}
+
+h1,
+h2 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+}
+
+h3 {
+    font-family: var(--heading-paragraph-font);
+    color: var(--secondary-color);
+}
+
+hr {
+    height: 2px;
+    background: var(--primary-color);
+    margin: 0px 0px 50px 0px;
+}
+
+header p {
+    text-align: center;
+    background-color: var(--accent1-color);
+}
+
+
+p {
+    font-family: var(--paragraph-font);
+    color: var(--paragraph-color-on-white);
+    padding: 1em;
+}
+
+.colors {
+    width: 100%;
+    min-width: 350px;
+    margin: 30px auto;
+    text-align: center;
+}
+
+nav {
+    background-color: var(--navbackground);
+    line-height: 3em;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+nav {
+    list-style-type: none;
+    display: flex;
+
+}
+
+nav a {
+    padding: 1em;
+    min-width: 120px;
+    text-decoration: none;
+    padding: 10px;
+    color: var(--nav-link-color);
+
+}
+
+nav a:hover {
+    background-color: var(--navhighlight);
+}
+
+#hamburgermenu {
+    display: block;
+    font-size: 1.5rem;
+    border: 1px solid rgba(0, 0, 0, .3);
+    padding: 3px 7px 6px;
+    background-color: #eee;
+    color: #000;
+}
+
+#hamburgermenu::before {
+    content: "☰";
+}
+
+#hamburgermenu.show::before {
+    content: "✕";
+}
+
+.show li {
+    display: block;
+    width: 100%;
+}
+
+.show li a {
+    display: block;
+}
+
+nav ul li {
+    display: none;
+}
+
+.card h3 {
+    font-family: var(--heading-font);
+    font-size: xx-large;
+    text-align: center;
+    background-color: var(--secondary-color);
+    margin-block-start: 0%;
+    margin-block-end: 0%;
+    padding: 1%;
+}
+
+.card p {
+    text-align: center;
+}
+
+.card {
+    display: grid;
+    grid-template-rows: 50px auto;
+    min-height: 0px;
+    align-content: flex-start;
+    border: 4px solid var(--secondary-color);
+    margin: 10px 0 40px;
+}
