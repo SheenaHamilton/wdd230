@@ -21,11 +21,10 @@
 
 <body>
     <header>
-        <h1 class="cherry center">Cherry Grove <br>
-            Chamber of Commerce Site Plan</h1>
+        <h1 class="cherry">Cherry Grove <br> Chamber of Commerce</h1>
         <nav>
             <button id="hamburgermenu"></button>
-            <ul id="nav">
+            <ul class="navigationmenu">
                 <li><a href="#" class="active">Home</a></li>
                 <li><a href="">Discover</a></li>
                 <li><a href="">Directory</a></li>
@@ -34,27 +33,56 @@
         </nav>
     </header>
     <main> 
-        <h2>Page Title here</h2>
-        <section class="hero">
-        </section>
-        <section class="card">
-            <h3></h3>
-        </section>
-        <section class="card">
-            <h3></h3>
-        </section>
-        <section class="card">
-            <h3></h3>
-        </section>
-        <section class="card">
-            <h3></h3>
-        </section>
+        <div class="hero-img">
+            <div class="hero-txt">
+                <h2>The sights of Cherry Grove</h2>
+                <p>Images taken by our local photographers</p>
+            </div>  
+        </div>
+        <div id="cards">
+            <section class="card">
+                <h3>Action</h3>
+                <p></p>
+            </section>
+            <section class="card">
+                <h3>Current Events</h3>
+                <p></p>
+            </section>
+            <section class="card">
+                <h3>Weather</h3>
+                <p></p>
+            </section>
+            <section class="card">
+                <h3>Spotlight</h3>
+                <p></p>
+            </section>
+        </div>
     </main>
     <footer>
-        <div><p>Chamber Contact Information</p></div>
-        <p>WDD230 FrontEnd </p>
-        <p id="lastModified"></p>
+        <div id="footer-contact">
+            <img src="images/CherryGroveLogobw.png" alt="Cherry Grove Logo">
+            <section>
+                <h3>Chamber Contact Information</h3>
+                <ul>
+                    <li>Phone: 780.342.4444</li>
+                    <li>Email: <a href="mailto:cherrygrovechamber@gmail.com">cherrygrovechamber@gmail.com</a></li>
+                    <li><br>Address: <br>6755 Cherry Lane<br> Cherry Grove, Alberta<br> Canada, T0A 0T0</li>
+                </ul>
+            </section>
+            <section class="map">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d18597.562963737375!2d-110.11779492814199!3d54.36236389646338!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x53a7c5929b33887b%3A0x16b2897281cb50a7!2sCherry%20Grove%2C%20AB%20T0A%200T0!5e0!3m2!1sen!2sca!4v1696667766722!5m2!1sen!2sca"
+                    width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </section>
+        </div>
+        <div id="footer-end">
+            <p>Sheena Hamilton: WDD230</p> 
+            <p id="lastModified"></p>
+        </div>
     </footer>
     <script src="scripts/getdates.js"></script>
+    <script src="scripts/hamburgermenu.js"></script>
 </body>
 </html>

@@ -1,0 +1,54 @@
+@media screen and (min-width:1001px) {
+
+
+    /* ============= Menu Control ============= */
+    
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: end;
+    }
+
+    #hamburgermenu {
+        display: none;
+    }
+
+    .navigationmenu {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .navigationmenu li {
+        display: block;
+        flex: 1 1 100%;
+    }
+
+    /* ============= Card Control ============= */
+    #cards {
+        display: grid;
+        grid-template-columns: 32% 32% 32%;
+        column-gap: 1.5em;
+    }
+
+    #cards :last-child {
+        grid-column: 1/4;
+    }
+
+
+    /* ============= Footer Control ============= */
+
+    #footer-contact {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+
+    }
+
+
+    /* ============= Map Control ============= */
+    .map iframe {
+        height: 250px;
+        width: 100%;
+        margin-left: 20px;
+    }
+
+}
