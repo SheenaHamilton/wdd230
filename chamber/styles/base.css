@@ -4,11 +4,13 @@
     /* Color Palette */
     --primary-color: #1D3557;
     --secondary-color: #eeeeee;
-    --accent1-color: #A8DADC;
-    --accent2-color: #9cb6c8;
+    --accent1-color: #bbd9da;
+    --accent2-color: #c9d2d9;
     --accent3-color: #C1121F;
     --navmenu-color: #eeeeee;
-    --navmenu-hovercolor: #bbd9da;
+    --darkmode-color: rgb(65, 64, 64);
+    --darkmode-color-card: rgb(101, 100, 100);
+    --darkmode-text: rgb(238, 232, 232);
 
     /* Site Fonts */
     --heading-font: 'Dancing Script', cursive;
@@ -26,9 +28,10 @@ body {
 }
 
 header h1{
-    padding-top: 1em;
-    padding-left: .5em;
-    padding-right: .5em;
+    padding-top: 0.5em;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    padding-bottom: 0.5em;
 }
 
 .cherry::first-line {
@@ -63,39 +66,140 @@ ul {
 hr {
     border: solid 1px black;
 }
+/* ============= Social Media ============= */
+.tools .fa {
+    padding: 5px;
+    font-size: 20px;
+    width: 20px;
+    text-align: center;
+    text-decoration: none;
+    margin-right: 20px;
+    border-radius: 50%;
+}
+
+.fa:hover {
+    background: white;
+        color: #3B5998;
+}
+
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+/* ============= Tools Bar ============= */
+.tools {
+    background-color: var(--primary-color);
+    padding: 7.5px;
+    margin-bottom: 30px;
+    text-align: right;
+
+}
+.tools p {
+    display: inline-block;
+    padding-right: 5px;
+    color: var(--accent2-color);
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    vertical-align: middle;
+}
+
+.tools label {
+    vertical-align: middle;
+}
+/* ============= Dark Mode Slider ============= */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 52px;
+    height: 25px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 18px;
+    width: 18px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked+.slider {
+    background-color: var(--accent3-color);
+}
+
+input:focus+.slider {
+    box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked+.slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
 /* ============= Hero Image ============= */
 .hero-txt {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+
     position: absolute;
-    bottom: 0%;
-    left: 0%;
-    width: 100%;
+    bottom: 10%;
+    right: 5%;
     color: white;
-    text-align: center;
 }
 .hero-txt h2 {
+    text-shadow: 0px 0px 8px #000000, 0px 0px 10px #000000;
     font-family: var(--heading-font);
-    font-weight: lighter;
-    color: white;
-    font-size: 1em;
-    padding: 0 10px;
+    color: var(--accent1-color);
+    font-size: 3.5em;
+    margin-block-start: 0;
+    margin-block-end: 0;
 }
 
 .hero-txt p {
+    text-shadow: 0px 0px 8px #000000, 0px 0px 10px #000000;
     font-family: var(--paragraph-font);
     color: white;
-    font-size: 0.5em;
-    padding: 0 10px;
+    font-size: 1.1em;
+    margin-block-start: .2em;
 }
 
 .hero-img {
-    background-image: url("https://sheenahamilton.github.io/wdd230/chamber/images/cherry-grove.webp");
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, .5)), url("https://sheenahamilton.github.io/wdd230/chamber/images/flowersfall.webp");
     height: 300px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
-    margin-bottom: 30px;
 }
 
 
@@ -112,7 +216,7 @@ nav {
     color: black;
     position: absolute;
     right: 10px;
-    top: -60px;
+    top: -40px;
 }
 
 #hamburgermenu::before {
@@ -135,8 +239,6 @@ nav {
     border-bottom: none;
 }
 
-
-
 .navigationmenu.show:last-child {
     border-bottom: 2px solid ;
 }
@@ -154,7 +256,7 @@ nav {
 }
 
 .navigationmenu li a:hover {
-    background-color: var(--navmenu-hovercolor);
+    background-color: var(--accent1-color);
     color: var(--primary-color);
     font-weight: 700;
 }
@@ -232,8 +334,7 @@ nav {
 /* ============= Footer  ============= */
 
 footer {
-   background-color: var(--primary-color);
-    padding-top: 30px;
+    background-color: var(--primary-color);
 }
 
 #footer-contact {
@@ -241,6 +342,7 @@ footer {
     grid-template-columns: 1fr;
     text-align: left;
     width: 90%;
+    padding: 30px 0px;
     margin: auto auto
 }
 
@@ -253,7 +355,7 @@ footer ul {
     list-style-type: none;
     padding: 0px;
     font-size: large;
-    color: white;
+    color:var(--accent2-color);
 }
 
 footer img {
@@ -261,7 +363,7 @@ footer img {
 }
 
 footer a {
-    color: white;
+    color: var(--accent2-color);
 }
 
 footer a:hover, a:visited {
@@ -281,8 +383,7 @@ footer a:hover, a:visited {
 
 /* ============= Map Control ============= */
 .map {
-    margin: auto auto;
-    margin: 20px 0px;
+    margin: 0px 0px;
 }
 
 .map iframe {
@@ -290,3 +391,4 @@ footer a:hover, a:visited {
     width: 100%;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
+

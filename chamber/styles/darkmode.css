@@ -1,0 +1,65 @@
+/* ============= Dark Mode ============= */
+
+.darkmode {
+    background-color: var(--darkmode-color);
+    color: var(--darkmode-text);
+}
+
+.map .darkmode-map {
+    filter: brightness(80%);
+    box-shadow: none;
+    color:black;
+}
+
+/* ============= Dark Footer ============= */
+.darkmode footer h3 {
+    color: var(--darkmode-text);
+}
+
+.darkmode footer ul {
+    color: var(--darkmode-text);
+}
+
+.darkmode footer a {
+    color: var(--darkmode-text);
+}
+
+.darkmode footer img {
+    filter:brightness(90%)
+}
+
+.darkmode #footer-end {
+    background-color: var(--darkmode-color);
+}
+
+.darkmode .weatherwidget-io {
+    data-: "gray";
+} 
+/* ============= Dark Menu Control ============= */
+
+.darkmode ul li a {
+    color: var(--darkmode-text);
+}
+
+.darkmode ul .active {
+    background-color: var(--primary-color);
+    color: var(--white);
+}
+
+.darkmode .navigationmenu.show:last-child {
+    border-bottom: 2px solid black;
+}
+
+/* ============= Dark Cards ============= */
+
+.darkmode .card {
+    background-color: var(--darkmode-color-card);
+}
+
+.darkmode .card h3 {
+    color: var(--darkmode-text);
+}
+
+.darkmode .card a {
+    color: var(--darkmode-text);
+}
