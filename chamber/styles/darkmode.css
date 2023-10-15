@@ -60,3 +60,7 @@
 .darkmode .card a {
     color: var(--darkmode-text);
 }
+
+.darkmode .card li {
+    background-color: var(--darkmode-color);
+}
