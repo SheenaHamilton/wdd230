@@ -6,8 +6,5 @@ const weather = document.querySelector(".weatherwidget-io")
 
 darkmode.addEventListener("click", () => {
     body.classList.toggle("darkmode");
-    nav.classList.toggle("darkmode");
     map.classList.toggle("darkmode-map");
-
-    weather.setAttribute("data-theme","gray");
 });
