@@ -32,9 +32,6 @@
     background-color: var(--darkmode-color);
 }
 
-.darkmode .weatherwidget-io {
-    data-: "gray";
-} 
 /* ============= Dark Menu Control ============= */
 
 .darkmode ul li a {
