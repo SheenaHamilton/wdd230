@@ -13,7 +13,7 @@
 
     <meta property="og:title" content="Sheena Hamilton's Homepage for WDD230:Web Frontend Development">
     <meta property="og:type" content="website">
-    <meta property="og:image" content="https://sheenahamilton.github.io/wdd230/images/LakelandArea.jpeg">
+    <meta property="og:image" content="https://sheenahamilton.github.io/wdd230/images/LakelandArea.webp">
     <meta property="og:url" content="https://sheenahamilton.github.io/wdd230/">
 
 </head>
@@ -32,35 +32,46 @@
         </ul>
     </nav>
     <main>
-        <h2>WDD 230: Web Frontend Development</h2>
-        <section class="card">
-            <h3>Learning Activities</h3>
-            <ul>
-                <li>01:<a href="lesson01/holygrail.html"> Holy Layout</a> | <a href="lesson01/media-query.html"> Media Query</a></li>
-                <li>02:<a href="lesson02/design.html"> Design Principals</a> | <a href="lesson02/design-principles.html"> Design Principals Document</a></li>
-                <li>03:<a href="lesson03/images/FinishedScreenshotExercise.webp"> Exercise Screenshot</a> | <a href="https://codepen.io/SheenaHamilton/pen/GRPdVEL"> CodePen Exercise</a> | <a href="https://codepen.io/SheenaHamilton/pen/qBLYeQJ"> Hamburger Menu</a> | <a href="lesson03/chamber-site-plan.html"> Chamber Site Plan</a></li>
-                <li>04:<a href="https://codepen.io/SheenaHamilton/pen/bGOmEWx"> Psuedo CodePen</a></li>
-                <li>05:<a href="lesson05/bom.html"> Book of Mormon - Top 10</a></li>
-                <li>06:<a href="lesson06/images/landscape.webp"> Webp Image conversion</a> | <a href="lesson06/responsive-images.html"> Responsive Images</a></li>
-                <li>07:<a href=""></a></li>
-                <li>08:<a href=""></a></li>
-                <li>09:<a href=""></a></li>
-                <li>10:<a href=""></a></li>
-            </ul>
-        </section>
-        <section class="card">
-            <h3>Information</h3>
-            <p>[Weather]</p>
-            <p>[Number of Visits]</p>
-            <p>[Other]</p>
-        </section>
-       <section class="map" >
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9771.487547462599!2d-110.08304237433435!3d54.35615649036906!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x53a7c5929b33887b%3A0x16b2897281cb50a7!2sCherry%20Grove%2C%20AB%20T0A%200T0!5e0!3m2!1sen!2sca!4v1695880166512!5m2!1sen!2sca"
-                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade">
-            </iframe>
-            <h3>Cherry Grove, Alberta</h3>
-        </section>
+        <div class="hero">
+            <picture>
+                <source srcset="images/hero-small.webp" media="(max-width: 950px)">
+                <img src="images/hero-large.webp" alt="San Diego Temple" width="1500" height="1000">
+            </picture>
+            <div class="herotext">
+                <p>San Diego Temple</p>
+            </div>
+        </div>
+        <div id="main-area">
+            <h2>WDD 230: Web Frontend Development</h2>
+            <section class="card">
+                <h3>Learning Activities</h3>
+                <ul>
+                    <li>01:<a href="lesson01/holygrail.html"> Holy Layout</a> | <a href="lesson01/media-query.html"> Media Query</a></li>
+                    <li>02:<a href="lesson02/design.html"> Design Principals</a> | <a href="lesson02/design-principles.html"> Design Principals Document</a></li>
+                    <li>03:<a href="lesson03/images/FinishedScreenshotExercise.webp"> Exercise Screenshot</a> | <a href="https://codepen.io/SheenaHamilton/pen/GRPdVEL"> CodePen Exercise</a> | <a href="https://codepen.io/SheenaHamilton/pen/qBLYeQJ"> Hamburger Menu</a> | <a href="lesson03/chamber-site-plan.html"> Chamber Site Plan</a></li>
+                    <li>04:<a href="https://codepen.io/SheenaHamilton/pen/bGOmEWx"> Psuedo CodePen</a></li>
+                    <li>05:<a href="lesson05/bom.html"> Book of Mormon - Top 10</a></li>
+                    <li>06:<a href="lesson06/images/landscape.webp"> Webp Image conversion</a> | <a href="lesson06/responsive-images.html"> Responsive Images</a></li>
+                    <li>07:<a href=""></a></li>
+                    <li>08:<a href=""></a></li>
+                    <li>09:<a href=""></a></li>
+                    <li>10:<a href=""></a></li>
+                </ul>
+            </section>
+            <section class="card">
+                <h3>Information</h3>
+                <p>[Weather]</p>
+                <p>[Number of Visits]</p>
+                <p>[Other]</p>
+            </section>
+        <section class="map" >
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9771.487547462599!2d-110.08304237433435!3d54.35615649036906!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x53a7c5929b33887b%3A0x16b2897281cb50a7!2sCherry%20Grove%2C%20AB%20T0A%200T0!5e0!3m2!1sen!2sca!4v1695880166512!5m2!1sen!2sca"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+                <h3>Cherry Grove, Alberta</h3>
+            </section>
+        </div>
     </main>
     <footer>
         <p >&copy; <span id="currentYear"></span> ✵ Sheena Hamilton 🇨🇦 Alberta, Canada</p>

@@ -28,12 +28,17 @@
     }
     
     main {
+        width: 100%;
+    }
+
+    #main-area {
         width: 90%;
         display: grid;
         grid-template-columns: 1fr 1fr;
         row-gap: 10px;
         column-gap: 30px;
     }
+
     .map {
         grid-column: span 2;
         margin-bottom: 40px;
@@ -49,5 +54,9 @@
 
     #hamburgermenu {
         display: none;
+    }
+
+    .herotext {
+        font-size: 2.5em;
     }
 }
