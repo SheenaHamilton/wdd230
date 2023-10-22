@@ -8,13 +8,18 @@
     <meta name="description" content="Cherry Grove Chamber of Commerce: Find information about events, local services, and the area.">
     <meta name="author" content="Sheena Hamilton">
     <link rel="icon" href="favicon.ico">
+    <!-- Add icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <!-- Add Website stylesheets -->
     <link href="styles/normalize.css" rel="stylesheet">
     <link href="styles/base.css" rel="stylesheet">
     <link href="styles/medium.css" rel="stylesheet">
     <link href="styles/larger.css" rel="stylesheet">
     <link href="styles/darkmode.css" rel="stylesheet">
-    <!-- Add icon library -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
     <meta property="og:title" content="Cherry Grove Chamber of Commerce">
     <meta property="og:type" content="website">
     <meta property="og:image" content="https://sheenahamilton.github.io/wdd230/chamber/images/cherry-grove.webp">
@@ -36,10 +41,18 @@
     </header>
     <main> 
         <div class="hero-img">
+            <picture>
+                <source srcset="images/wdd230-org-small.webp" media="(max-width: 500px)">
+                <source srcset="images/wdd230-org-medium.webp" media="(max-width: 1000px)">
+                <img src="images/wdd230-org-large.webp" alt="Hero Sourceset" width="1500" height="750">
+            </picture>
             <div class="hero-txt">
+                <h2></h2>
+            </div>
+            <!--<div class="hero-txt">
                 <h2>Country Charm</h2>
                 <p>Images taken by our local photographers</p>
-            </div>  
+            </div>  -->
         </div>
         <div class="tools">
             <a href="#" class="fa fa-facebook"></a>
@@ -83,7 +96,24 @@
             <section class="card block-style">
                 <h3>Local Weather</h3>
                 <a class="weatherwidget-io" href="https://forecast7.com/en/54d36n110d09/cherry-grove/" data-label_1="CHERRY GROVE"
-                    data-label_2="WEATHER" data-days="3" data-theme="weather_one">CHERRY GROVE WEATHER</a>
+                    data-label_2="WEATHER" data-days="7" data-theme="weather_one">CHERRY GROVE WEATHER</a>
+                <div id="windchill">
+                    <div class="weather-entry">
+                        <div>
+                            <label for="temp">Current Temperature (&degF)</label>
+                            <input type="text" id="temp-input" name="temp">
+                        </div>
+                        <div>
+                            <label for="wind">Wind Speed (mph)</label>
+                            <input type="text" id="wind-input" name="wind">
+                        </div>
+                    </div>
+                    <div>
+                        <p>Feels like</p>
+                        <p id="windchill-value">N/A</p>
+                    </div>
+                    <i class="fa-solid fa-wind" style="color: #0049c7;"></i>
+                </div>
             </section>
             <div>
                 <h3>Company Spotlights</h3>
@@ -127,5 +157,6 @@
     <script src="scripts/hamburgermenu.js"></script>
     <script src="scripts/darkmode.js"></script>
     <script src="scripts/weatherapp.js"></script>
+    <script src="scripts/windchill.js"></script>
 </body>
 </html>

@@ -49,7 +49,7 @@
 
 /* ============= Dark Cards ============= */
 
-.darkmode .card {
+.darkmode .block-style {
     background-color: var(--darkmode-color-card);
 }
 
@@ -61,6 +61,14 @@
     color: var(--darkmode-text);
 }
 
-.darkmode .card li {
+.darkmode .events li {
     background-color: var(--darkmode-color);
+}
+
+.darkmode #cards h3 {
+    color: var(--accent1-color);
+}
+
+.darkmode #cards h4 {
+    color: var(--darkmode-text);
 }

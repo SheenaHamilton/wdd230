@@ -16,4 +16,7 @@
         grid-column: 1/3;
     }
 
+    .hero-txt h2:before {
+        content: "Medium";
+    }
 }
