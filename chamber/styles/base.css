@@ -67,24 +67,24 @@ hr {
     border: solid 1px black;
 }
 /* ============= Social Media ============= */
-.tools .fa {
-    padding: 5px;
-    font-size: 20px;
-    width: 20px;
-    text-align: center;
+
+.tools .social {
     text-decoration: none;
     margin-right: 20px;
-    border-radius: 50%;
+    vertical-align: middle;
 }
 
-.fa:hover {
-    background: white;
-        color: #3B5998;
+#facebook{
+    background-color: white;
+    height: 1.8em;
+    width: 1.8em;
+    padding: 2px;
+    border-radius: 100%;
+    filter: grayscale(100%)
 }
 
-.fa-facebook {
-    background: #3B5998;
-    color: white;
+#facebook:hover {
+    filter: grayscale(0%)
 }
 
 /* ============= Tools Bar ============= */
