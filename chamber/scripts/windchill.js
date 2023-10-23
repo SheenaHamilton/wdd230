@@ -7,7 +7,7 @@ windValue.addEventListener('input',CalculateWindChill);
 function CalculateWindChill() {
 
     const windChillinput = document.querySelector('#windchill-value');
-    const windChillIcon = document.querySelector('#windchill i');
+    const windChillIcon = document.querySelector('#windchill .icon');
 
 	const tempValue = document.querySelector('#temp-input');
 	const windValue = document.querySelector('#wind-input');
@@ -18,7 +18,7 @@ function CalculateWindChill() {
 
         let windchillRounded = windchill.toFixed(1);
 
-	    windChillinput.innerHTML =  windchillRounded + "&degF";
+	    windChillinput.innerHTML =  windchillRounded + "&deg;F";
         windChillIcon.classList.remove("show");
     }
     else

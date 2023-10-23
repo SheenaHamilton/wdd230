@@ -462,7 +462,7 @@ footer a:hover, a:visited {
     display: grid;
     grid-template-columns: minmax(0, 1fr) minmax(0, .8fr) minmax(0, .5fr);
     margin-top: 25px;
-    text-align: center;
+    text-align: right;
 }   
 
 #windchill label {
@@ -483,11 +483,8 @@ footer a:hover, a:visited {
     margin-bottom: auto;
 }
 
-#windchill i {
-    font-size: 3em;
-    text-align: left;
-    margin-top: auto;
-    margin-bottom: auto;
+#windchill .icon {
+    height: 3em;
 }
 
 #windchill .show {

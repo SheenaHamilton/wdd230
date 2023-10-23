@@ -9,9 +9,6 @@
     <meta name="author" content="Sheena Hamilton">
     <link rel="icon" href="favicon.ico">
     <!-- Add icon library -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <!-- Add Website stylesheets -->
     <link href="styles/normalize.css" rel="stylesheet">
@@ -47,7 +44,7 @@
                 <img src="images/wdd230-org-large.webp" alt="Hero Sourceset" width="1500" height="750">
             </picture>
             <div class="hero-txt">
-                <h2></h2>
+                <h2>&nbsp;</h2>
             </div>
             <!--<div class="hero-txt">
                 <h2>Country Charm</h2>
@@ -100,11 +97,11 @@
                 <div id="windchill">
                     <div class="weather-entry">
                         <div>
-                            <label for="temp">Current Temperature (&degF)</label>
+                            <label for="temp-input">Current Temperature (&deg;F)</label>
                             <input type="text" id="temp-input" name="temp">
                         </div>
                         <div>
-                            <label for="wind">Wind Speed (mph)</label>
+                            <label for="wind-input">Wind Speed (mph)</label>
                             <input type="text" id="wind-input" name="wind">
                         </div>
                     </div>
@@ -112,7 +109,7 @@
                         <p>Feels like</p>
                         <p id="windchill-value">N/A</p>
                     </div>
-                    <i class="fa-solid fa-wind" style="color: #0049c7;"></i>
+                    <img class="icon show" src="images/wind-solid.svg" alt="wind icon">  
                 </div>
             </section>
             <div>
