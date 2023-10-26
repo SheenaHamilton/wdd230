@@ -20,7 +20,7 @@ h1, p {
 }
 
 .fadeIn img{
-    animation: fadeIn 5s;
+    animation: fadeIn 10s;
     background-color: black;
 }
 
@@ -28,6 +28,5 @@ h1, p {
     0% { 
         opacity: 0;}
 
-    100% {opacity: 1;
-          background-color: none;}
+    100% {opacity: 1;}
 }
