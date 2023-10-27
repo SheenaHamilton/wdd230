@@ -485,6 +485,7 @@ footer a:hover, a:visited {
 
 #windchill .icon {
     height: 3em;
+    border: none;
 }
 
 #windchill .show {
