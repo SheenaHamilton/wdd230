@@ -27,7 +27,7 @@ body {
     margin: 0 auto;
 }
 
-header h1{
+header span{
     padding-top: 0.5em;
     padding-left: 0.5em;
     padding-right: 0.5em;
@@ -43,7 +43,7 @@ h1 {
 
 .fontstyle-1 {
     font-family: var(--heading-font);
-    color: var(--primary-color-color);
+    color: var(--primary-color);
     font-size: 3em;
 }
 
@@ -214,8 +214,11 @@ input:checked+.slider:before {
     right: 40%;
 }
 
-.hero-txt h2 {
+.hero-txt {
     text-shadow: 0px 0px 8px #000000, 0px 0px 10px #000000;
+}
+
+.hero-txt h2 {
     font-family: var(--heading-font);
     color: var(--accent1-color);
     font-size: 4em;
@@ -224,7 +227,6 @@ input:checked+.slider:before {
 }
 
 .hero-txt p {
-    text-shadow: 0px 0px 8px #000000, 0px 0px 10px #000000;
     font-family: var(--paragraph-font);
     color: white;
     font-size: 1.1em;
