@@ -52,13 +52,13 @@
     /* ============= Discover Page ============= */
     #discover {
         display: grid;
-        grid-template-columns: minmax(200px, 1fr) 3fr;
+        grid-template-columns: minmax(250px, 1fr) 3fr;
         width: 100%;
     }
 
     #photo-gallery {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
     }
 
     .photo-captioned {
@@ -73,7 +73,11 @@
     #photo-gallery h2,
     #photo-gallery hr,
     #photo-gallery p {
-            grid-column: 1/4;
+            grid-column: 1/3;
         
+    }
+
+    #leftbar {
+        grid-row: 1;
     }
 }

@@ -18,22 +18,20 @@
 
     #discover {
         display: grid;
-        grid-template-columns: minmax(200px, 1fr) 3fr;
+        grid-template-columns: minmax(250px, 1fr) 3fr;
         width: 100%;
     }
 
-    #photo-gallery {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-    }
-
     #leftbar {
-        padding: 20px 20px 0 20px;
-        background-color: var(--secondary-color);
+        grid-row: 1;
+    }
+            
+    .photo-captioned {
+        filter: brightness(95%);
     }
 
-    #photo-gallery h2, hr, p {
-        grid-column: 1/3;
+    .photo-captioned:hover {
+        filter: brightness(110%);
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     }
-
 }
