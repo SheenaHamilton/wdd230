@@ -80,13 +80,16 @@
 }
 
 .darkmode #leftbar h2 {
-    background-color: var(--darkmode-color-card);
+    color: var(--accent1-color);
 }
 
-.darkmode .sidebar-card {
-    background-color: var(--darkmode-color);
-}
+
 
 .darkmode .photo-captioned {
     background-color: var(--darkmode-color-card);
+}
+
+.darkmode #welcome-banner {
+    background-color: var(--accent3-color);
+    color: var(--darkmode-text);
 }
