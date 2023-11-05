@@ -37,14 +37,16 @@ header span{
 }
 
 h1 {
-    margin-block-start: 0.4em;
-    margin-block-end: 0.2em;
+    display: inline;
+    float: left;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
 }
 
 .fontstyle-1 {
     font-family: var(--heading-font);
-    color: var(--primary-color);
-    font-size: 3em;
+    color: white;
+    font-size: 2em;
 }
 
 .fontstyle-2 {
