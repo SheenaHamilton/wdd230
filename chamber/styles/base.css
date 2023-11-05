@@ -28,6 +28,7 @@ body {
 }
 
 header span{
+    display: inline-block;
     padding-top: 0.5em;
     padding-left: 0.5em;
     padding-right: 0.5em;
@@ -37,16 +38,14 @@ header span{
 }
 
 h1 {
-    display: inline;
-    float: left;
-    margin-block-start: 0em;
-    margin-block-end: 0em;
+    margin-block-start: 0.4em;
+    margin-block-end: 0.2em;
 }
 
 .fontstyle-1 {
     font-family: var(--heading-font);
-    color: white;
-    font-size: 2em;
+    color: var(--primary-color);
+    font-size: 3em;
 }
 
 .fontstyle-2 {
@@ -54,7 +53,7 @@ h1 {
 }
 
 
-.cherry::first-line {
+.cherry::first-line{
     color: var(--accent3-color);
     font-family: var(--heading-font);
     font-size: 1.5em;
@@ -547,6 +546,15 @@ footer a:hover, a:visited {
     padding: 10px 50px 50px 50px; 
     text-align: center;
     column-gap: 20px;
+}
+
+#photo-gallery h2{
+    padding-top: 0.5em;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    padding-bottom: 0.5em;
+    margin: 0px;
+    font-size: 2em;
 }
 
 .photo-captioned {

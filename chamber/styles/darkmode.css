@@ -75,6 +75,9 @@
 
 /* ============= Dark Discover ============= */
 
+.darkmode h1 {
+    color: var(--accent1-color);
+}
 .darkmode #leftbar {
     background-color: var(--darkmode-color-card);
 }
