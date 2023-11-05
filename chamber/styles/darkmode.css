@@ -83,8 +83,6 @@
     color: var(--accent1-color);
 }
 
-
-
 .darkmode .photo-captioned {
     background-color: var(--darkmode-color-card);
 }

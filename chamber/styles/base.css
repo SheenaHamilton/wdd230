@@ -590,6 +590,7 @@ footer a:hover, a:visited {
     width: 100%;
     background-color: white;
     margin: 0 auto;
+    border-style: groove;
 }
 
 #welcome-banner {
