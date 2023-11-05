@@ -72,3 +72,21 @@
 .darkmode #cards h4 {
     color: var(--darkmode-text);
 }
+
+/* ============= Dark Discover ============= */
+
+.darkmode #leftbar {
+    background-color: var(--darkmode-color-card);
+}
+
+.darkmode #leftbar h2 {
+    background-color: var(--darkmode-color-card);
+}
+
+.darkmode .sidebar-card {
+    background-color: var(--darkmode-color);
+}
+
+.darkmode .photo-captioned {
+    background-color: var(--darkmode-color-card);
+}

@@ -23,9 +23,6 @@
         flex: 1 1 100%;
     }
 
-    .hero-txt h2:before {
-        content: "Large";
-    }
     /* ============= Card Control ============= */
     #cards {
         display: grid;
@@ -52,4 +49,30 @@
         width: 100%;
     }
 
+    /* ============= Discover Page ============= */
+    #discover {
+        display: grid;
+        grid-template-columns: minmax(200px, 1fr) 3fr;
+        width: 100%;
+    }
+
+    #photo-gallery {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .photo-captioned {
+        filter: brightness(95%);
+    }
+
+    .photo-captioned:hover {
+        filter:brightness(110%);
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+
+    #photo-gallery {
+        & h2, hr, p {
+            grid-column: 1/4;
+        }
+    }
 }

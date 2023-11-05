@@ -16,7 +16,24 @@
         grid-column: 1/3;
     }
 
-    .hero-txt h2:before {
-        content: "Medium";
+    #discover {
+        display: grid;
+        grid-template-columns: minmax(300px, 1fr) 3fr;
+        width: 100%;
     }
+
+    #photo-gallery {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #leftbar {
+        padding: 20px 20px 0 20px;
+        background-color: var(--secondary-color);
+    }
+
+    #photo-gallery h2, hr, p {
+        grid-column: 1/3;
+    }
+
 }

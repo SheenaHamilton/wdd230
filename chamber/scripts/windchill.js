@@ -1,7 +1,7 @@
 const tempValue = document.querySelector('#temp-input');
 const windValue = document.querySelector('#wind-input');
 
-tempValue.addEventListener('input', CalculateWindChill);
+tempValue.addEventListener('input',CalculateWindChill);
 windValue.addEventListener('input',CalculateWindChill);
 
 function CalculateWindChill() {

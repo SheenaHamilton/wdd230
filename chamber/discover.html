@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cherry Grove Chamber of Commerce</title>
+    <meta name="description" content="Cherry Grove Chamber of Commerce: Find information about events, local services, and the area.">
+    <meta name="author" content="Sheena Hamilton">
+    <link rel="icon" href="favicon.ico">
+    <!-- Add Website stylesheets -->
+    <link href="styles/normalize.css" rel="stylesheet">
+    <link href="styles/base.css" rel="stylesheet">
+    <link href="styles/medium.css" rel="stylesheet">
+    <link href="styles/larger.css" rel="stylesheet">
+    <link href="styles/darkmode.css" rel="stylesheet">
+
+    <meta property="og:title" content="Cherry Grove Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://sheenahamilton.github.io/wdd230/chamber/images/cherry-grove.webp">
+    <meta property="og:url" content="https://sheenahamilton.github.io/wdd230/chamber/">
+</head>
+
+<body>
+    <header>
+        <h1 class="cherry">Cherry Grove <br> Chamber of Commerce</h1>
+        <nav>
+            <button id="hamburgermenu"></button>
+            <ul class="navigationmenu">
+                <li><a href="index.html" >Home</a></li>
+                <li><a href="#" class="active">Discover</a></li>
+                <li><a href="">Directory</a></li>
+                <li><a href="">Join</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main> 
+        <div class="tools">
+            <a href="#" class="social"><img id="facebook" src="images/facebook.svg" alt="facebook icon"></a>
+            <p>Dark Mode</p>
+            <label class="switch">
+                <input id="darkmode" type="checkbox">
+                <span class="slider round"></span>
+            </label>
+        </div>
+        <div id="discover">
+            <div id="leftbar">
+                <div class="sidebar-card">
+                    <h2>Statistics</h2>
+                    <p>Nestled amidst the picturesque landscapes of central Alberta, Canada, Cherry Grove exudes a charming, small-town allure.<br><br>
+                    This delightful hamlet, a hidden gem within the Municipal District of Bonnyville No. 87, sits just off of Highway 55. Cherry Grove offers a perfect blend of serenity and accessibility for both locals and visitors alike.</p>
+                    <ul>
+                        <li>Population (2014): 405</li>
+                        <li>12 km Southeast Cold Lake</li>
+                    </ul>
+                </div>
+                <div class="sidebar-card">
+                    <h2>Amenities</h2>
+                    <ul>
+                        <li>Ice Rink</li>
+                        <li>Community Hall</li>
+                        <li>Pickle-Ball Courts</li>
+                        <li>Commumity Park</li>
+                        <li>Rodeo Grounds</li>
+                        <li>Fishing</li>
+                        <li>Swimming</li>
+                        <li>Cross-Country Skiing</li>
+                        <li>Downhill Skiing</li>
+                    </ul>
+                </div>
+                <div class="sidebar-card">
+                    <h2>Calendar & Events</h2>
+                    <iframe
+                        src="https://calendar.google.com/calendar/embed?height=300&wkst=1&bgcolor=%23ffffff&ctz=America%2FEdmonton&showTitle=0&showNav=1&showDate=1&showTabs=1&showCalendars=1&showTz=1&src=ZmQwZGM4NzAzZjMyZjZiZWUzYzcxNWNkYzc0MDIyMzdlYjk5NjM3YmVmOWIzN2EzNThjZjQ4Zjk4MDE5ZjM1ZEBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&src=ZW4uY2FuYWRpYW4jaG9saWRheUBncm91cC52LmNhbGVuZGFyLmdvb2dsZS5jb20&color=%234285F4&color=%230B8043"
+                        width="300" height="300" frameborder="0" scrolling="no" loading="lazy"></iframe>
+                </div>
+                <div>
+                    <img id="life" src="images/EmbraceLife.webp" alt="Embrace Life" height="240" width="300" loading="lazy">
+                </div>
+            </div>
+            <div id="rightbar">
+                <span id="welcome-banner"></span>
+                <div id="photo-gallery">
+                    <h2>Photo Gallery</h2>
+                    <hr class="divider-1">
+                    <p>Our scenic photo gallery showcases the natural beauty of this serene haven. Each image
+                    encapsulates the charm of the landscape, inviting you to immerse yourself in its peaceful atmosphere.</p>
+                    <div class="photo-captioned">
+                        <img src="images/TreesFall.webp" alt="Trees in the fall" width="800" height="600" loading="lazy">
+                        <p class="fontstyle-2">Walking trails in the Fall</p>
+                    </div>
+                    <div class="photo-captioned">
+                        <img src="images/Kinisootubing.webp" alt="Tubing at Kinosoo Ridge" width="800" height="600" loading="lazy">
+                        <p class="fontstyle-2">Kinosoo Ridge Tube Park</p>
+                    </div>
+                    <div class="photo-captioned">
+                        <img src="images/Kinosoo-Ridge-Snow-Resort_3-1.webp" alt="Kinosoo Ski Resort" width="800" height="600" loading="lazy">
+                        <p class="fontstyle-2">Kinosoo Snow Resort</p>
+                    </div>
+                    <div class="photo-captioned">
+                        <img src="images/lakesunset.webp" alt="Sunset on the Lake" width="800" height="600" loading="lazy">
+                        <p class="fontstyle-2">Sunset on Cold Lake</p>
+                    </div>
+                    <div class="photo-captioned">
+                        <img src="images/flowersfall2.webp" alt="Fall Flowers" width="800" height="600" loading="lazy">
+                        <p class="fontstyle-2">Fall Flowers</p>
+                    </div>
+                    <div class="photo-captioned">
+                        <img src="images/lawntractor2.webp" alt="Lawn Tractor Racing" width="800" height="600" loading="lazy">
+                        <p class="fontstyle-2">Lawn Tractor Races</p>
+                    </div>
+                    <div class="photo-captioned">
+                        <img src="images/trailsnow.webp" alt="Walking trail in the Winter" width="800" height="600" loading="lazy">
+                        <p class="fontstyle-2">Fresh Snow on the Walking Trail</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div id="footer-contact">
+            <img src="images/cherry-grove-logo.webp" alt="Cherry Grove Logo">
+            <section>
+                <h3>Contact Us</h3>
+                <ul>
+                    <li>Phone: 780.342.4444</li>
+                    <li>Email: <a href="mailto:cherrygrovechamber@gmail.com">cherrygrovechamber@gmail.com</a></li>
+                    <li><br>Address: <br>6755 Cherry Lane<br> Cherry Grove, Alberta<br> Canada, T0A 0T0</li>
+                </ul>
+            </section>
+            <div class="map">
+                <h3>Visit Us</h3>
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d18597.562963737375!2d-110.11779492814199!3d54.36236389646338!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x53a7c5929b33887b%3A0x16b2897281cb50a7!2sCherry%20Grove%2C%20AB%20T0A%200T0!5e0!3m2!1sen!2sca!4v1696667766722!5m2!1sen!2sca"
+                    width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </div>
+        <div id="footer-end">
+            <p>Sheena Hamilton: WDD230</p> 
+            <p id="lastModified"></p>
+        </div>
+    </footer>
+    <script src="scripts/getdates.js"></script>
+    <script src="scripts/hamburgermenu.js"></script>
+    <script src="scripts/darkmode.js"></script>
+    <script src="scripts/weatherapp.js"></script>
+    <script src="scripts/windchill.js"></script>
+</body>
+</html>
