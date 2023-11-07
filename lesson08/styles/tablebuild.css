@@ -1,0 +1,31 @@
+table, td, th {
+    margin: 10px auto;
+    border: thin solid black;
+    border-collapse: collapse;
+    padding: 10px;
+    text-align: center;
+}
+
+caption {
+    padding: 10px;
+    caption-side: bottom;
+    font-size: .8rem;
+}
+
+th {
+    background-color: lightgray;
+}
+
+thead th {
+    background-color: lightblue;
+}
+
+thead tr th:first-child {
+    font-size: 1.2rem;
+    font-style: oblique;
+}
+
+tr:nth-child(even) {
+    background-color: rgba(139, 171, 189, 0.25);
+}
+
