@@ -64,7 +64,7 @@ form input.submitBtn:active {
     border: inset 3px;
 }
 
-label:has(#range) {
+#rangelbl {
     margin: 10px 0 0 0;
 }
 
