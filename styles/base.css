@@ -1,13 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,500&family=Parisienne&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,5006..12,600;&family=Parisienne&display=swap');
 
 :root {
-    /* change the values below to your colors from your palette */
     --primary-color: #000000;
     --secondary-color: #109ac0;
     --accent1-color: #0b5d74;
     --accent2-color: #a3d0dd;
 
-    /* change the values below to your chosen font(s) */
     --heading-font:  'Parisienne', cursive;
     --paragraph-font:  'Nunito Sans', sans-serif;
 }

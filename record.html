@@ -11,7 +11,7 @@
     <link href="styles/normalize.css" rel="stylesheet">
     <link href="styles/base.css" rel="stylesheet">
     <link href="styles/larger.css" rel="stylesheet">
-    <link rel="stylesheet" href="styles/form.css">
+    <link href="styles/form.css" rel="stylesheet">
     <meta property="og:title" content="Sheena Hamilton's Homepage for WDD230:Web Frontend Development">
     <meta property="og:type" content="website">
     <meta property="og:image" content="https://sheenahamilton.github.io/wdd230/images/LakelandArea.webp">
@@ -34,28 +34,14 @@
         </ul>
     </nav>
     <main>
-        <div>
-            <h2>Rate My Website</h2>
-            
-            <form method="get" action="record.html">
-                <label>Username* <input type="text" id="username" name="username"  required></label>
-                <label>Password*<input type="password" id="password" name="password" pattern="[A-Za-z0-9]{8}" required></label>
-                <label>Confirm Password*<input type="password" id="confirm-password" name="confirm-password" required></label>
-                <span id="pw-message">Password must be 8 characters & alphanumeric</span>
-                <label>Email* <input type="email" id="email" name="email" placeholder="myemail@byui.edu" pattern="[a-zA-Z0-9._%+\-]+@byui\.edu$" title="Please enter a valid email address" required></label>
-                <label>Page Rating <span id="rangevalue">5</span><input type="range" id="range" name="rating" min="0" max="10" step="1" default="5" ></label>
-                <input type="submit" value="Record My Rating" class="submitBtn">
-            </form>
-
+        <div id="response-recorded">
+            <h2>Webpage Rating Submission</h2>
+            <p>Thank you for rating my webpage! Your response has been recorded.</p>
         </div>
     </main>
     <footer>
         <p>&copy; <span id="currentYear"></span> ✵ Sheena Hamilton 🇨🇦 Alberta, Canada</p>
         <p id="lastModified"></p>
     </footer>
-    <script src="scripts/getdates.js"></script>
-    <script src="scripts/hamburgermenu.js"></script>
-    <script src="scripts/range.js"></script>
-    <script src="scripts/passwordcheck.js"></script>
 </body>
 </html>

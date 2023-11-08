@@ -1,0 +1,130 @@
+:root {
+    --form-inputshade: #c3cfd2;
+    --form-inputborder: #638b95;
+    --form-buttoncolor: #a3d0dd;
+    --form-buttonborder: #6da6b6;
+    --form-buttonborderhi: #2c6878;
+
+
+}
+main {
+    width: 96%;
+    height: 100%;
+}
+
+h2 {
+    display: block;
+    font-size: xx-large;
+    font-weight: 300;
+    margin: 40px 0 20px 0;
+}
+
+main div {
+    width: 100%;
+    max-width: 20rem;
+    margin: auto auto;
+}
+
+form label {
+    display: block;
+    padding-top: 1rem;
+    color: var(--accent1-color);
+    font-size: .9rem;
+}
+
+form label input {
+    display: block;
+    font-size: 1rem;
+    border: solid 1px var(--form-inputborder);
+    border-radius: 4px;
+    padding: .75rem 2%;
+    width: 96%;
+    max-width: 20rem;
+    background-color: #edf4f5;
+}
+
+form input.submitBtn {
+    border: var(--form-buttoncolor) 3px solid;
+    background-color: var(--form-buttoncolor);
+    font-size: large;
+    font-weight: 600;
+    color: var(--primary-color);
+    border-radius: 1rem;
+    padding: .75rem .5rem;
+    margin: 1rem 0 2rem 0;
+    width: 100%;
+    max-width: 20rem;
+}
+
+form input.submitBtn:hover {
+    border: var(--form-buttonborder) 3px solid;
+}
+
+form input.submitBtn:active {
+    border: inset 3px;
+}
+
+label:has(#range) {
+    margin: 10px 0 0 0;
+}
+
+#range {
+    -webkit-appearance: none;
+    width: 100%;
+    margin: 20px 0;
+    padding: 0;
+    height: 10px;
+    border-radius: 10px;
+    background: var(--form-inputshade);
+    outline: none;
+    border: none;
+}
+
+#range::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    border: var(--form-buttonborder) solid 1px;
+    background: var(--form-buttoncolor);
+    cursor: pointer;
+}
+
+#range::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: var(--form-buttoncolor);
+    cursor: pointer;
+}
+
+#rangevalue {
+    background-color: var(--form-buttoncolor);
+    margin-left: 5px;
+    padding: 2px 8px;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: 600;
+    color: black;
+}
+
+#pw-message {
+    font-size: .8rem;
+}
+
+main #response-recorded {
+    height: 300px;
+    width: 90%;
+    max-width: 600px;
+    text-align: center;
+}
+
+#response-recorded p {
+    background-color: var(--accent2-color);
+    margin: 40px 0;
+    width: 96%;
+    padding: 30px 2% 30px 2%;
+    border-radius: 20px;
+}
+
