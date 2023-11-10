@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cherry Grove Chamber of Commerce</title>
+    <meta name="description" content="Cherry Grove Chamber of Commerce: Find information about events, local services, and the area.">
+    <meta name="author" content="Sheena Hamilton">
+    <link rel="icon" href="favicon.ico">
+    <!-- Add Website stylesheets -->
+    <link href="styles/normalize.css" rel="stylesheet">
+    <link href="styles/base.css" rel="stylesheet">
+    <link href="styles/medium.css" rel="stylesheet">
+    <link href="styles/larger.css" rel="stylesheet">
+    <link href="styles/darkmode.css" rel="stylesheet">
+
+    <meta property="og:title" content="Cherry Grove Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://sheenahamilton.github.io/wdd230/chamber/images/cherry-grove.webp">
+    <meta property="og:url" content="https://sheenahamilton.github.io/wdd230/chamber/">
+</head>
+
+<body>
+    <header>
+        <span class="cherry">Cherry Grove <br> Chamber of Commerce</span>
+        <nav>
+            <button id="hamburgermenu"></button>
+            <ul class="navigationmenu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="">Directory</a></li>
+                <li><a href="#" class="active">Join</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main> 
+        <div class="tools">
+            <a href="#" class="social"><img id="facebook" src="images/facebook.svg" alt="facebook icon"></a>
+            <p>Dark Mode</p>
+            <label class="switch">
+                <input id="darkmode" type="checkbox">
+                <span class="slider round"></span>
+            </label>
+        </div>
+        <h1 class="jointitle fontstyle-1">Join the Chamber of Commerce</h1>
+        <div id="join-page">
+            <div id="form-join">
+                <h2>Get Your Membership!</h2>
+                <form method="get" action="thankyou.html">
+                
+                    <fieldset>
+                        <legend>Applicant Information</legend>
+                        <label class="top">First Name* <input type="text" name="fname" id="fname" required></label>
+                        <label class="top">Last Name* <input type="text" name="lname" id="lname" required></label>
+                        <label class="top">Title or Position <input type="text" name="position" id="position" pattern="[A-Za-z0-9 \-]{7}"></label>
+                        <label class="top">Email* <input type="email" name="email" id="email" placeholder="youremail@gmail.com" required></label>
+                        <label class="top">Mobile Phone <input type="tel" name="mobile" id="mobile" placeholder="1231231234" required></label>
+                    </fieldset >
+                
+                    <fieldset>
+                        <legend>Membership Information</legend>
+                        <label class="top">Business/Organization Name*<input type="text" name="busname" id="busname" required></label>
+
+                        <div id="form-membership"><p>Membership Level</p>
+                            <label class="side"><input type="radio" name="membership" id="np" value="np"> Non-Profit Membership</label>
+                            <label class="side"><input type="radio" name="membership" id="broze" value="bronze"> Bronze Membership</label>
+                            <label class="side"><input type="radio" name="membership" id="silver" value="silver"> Silver Membership</label>
+                            <label class="side"><input type="radio" name="membership" id="gold" value="gold"> Gold Membership</label>
+                        </div>
+                        
+                        <label class="top">Business/Organization Description <textarea name="busdesc" id="busdesc"></textarea></label>
+
+                        <label><input type="hidden" name="timestamp" id="timestamp"></label>
+                    </fieldset>
+                
+                    <input type="submit" value="Request Membership" class="submitBtn">
+                </form>
+            </div>
+            <div id="benefits">
+                <h2>Membership Advantages</h2>
+                <section class="member-card block-style nonprofit">
+                    <h3>Non-Profit <span>$40</span></h3>
+                    <table>     
+                        <thead><tr><th colspan="2">Benefits Included in Membership</th></tr>
+                            <tr><th scope="col">Included</th><th scope="col">Benefit</th></tr>
+                        </thead>
+                        <tbody>                 
+                            <tr><td class="symbol">&#x2714;</td><td>Community Impact Recognition</td></tr>
+                            <tr><td class="symbol">❌</td><td>VIP Events</td></tr>
+                            <tr><td class="symbol">❌</td><td>Marketing Boost</td></tr>
+                            <tr><td class="symbol">&#x2714;</td><td>Directory Listing</td></tr>
+                            <tr><td class="symbol">&#x2714;</td><td>Chamber Recognition Seal</td></tr>
+                        </tbody>    
+                    </table>
+                </section>
+                <section class="member-card block-style gold">
+                    <h3>Gold <span>$100</span></h3>
+                    <table>     
+                        <thead><tr><th colspan="2">Benefits Included in Membership</th></tr>
+                            <tr><th scope="col">Included</th><th scope="col">Benefit</th></tr>
+                        </thead>
+                        <tbody>                 
+                            <tr><td class="symbol">❌</td><td>Community Impact Recognition</td></tr>
+                            <tr><td class="symbol">&#x2714;</td><td>VIP Events</td></tr>
+                            <tr><td class="symbol">&#x2714;</td><td>Marketing Boost</td></tr>
+                            <tr><td class="symbol">&#x2714;</td><td>Directory Listing</td></tr>
+                            <tr><td class="symbol">&#x2714;</td><td>Chamber Recognition Seal</td></tr>
+                        </tbody>    
+                    </table>
+                </section>
+                <section class="member-card block-style silver">
+                    <h3>Silver <span>$70</span></h3>
+                    <table>     
+                        <thead><tr><th colspan="2">Benefits Included in Membership</th></tr>
+                            <tr><th scope="col">Included</th><th scope="col">Benefit</th></tr>
+                        </thead>
+                        <tbody>                 
+                            <tr><td class="symbol">❌</td><td>Community Impact Recognition</td></tr>
+                            <tr><td class="symbol">❌</td><td>VIP Events</td></tr>
+                            <tr><td class="symbol">&#x2714;</td><td>Marketing Boost</td></tr>
+                            <tr><td class="symbol">&#x2714;</td><td>Directory Listing</td></tr>
+                            <tr><td class="symbol">&#x2714;</td><td>Chamber Recognition Seal</td></tr>
+                        </tbody>    
+                    </table>
+                </section>
+                <section class="member-card block-style bronze">
+                    <h3>Bronze <span>$50</span></h3>
+                    <table>     
+                        <thead><tr><th colspan="2">Benefits Included in Membership</th></tr>
+                            <tr><th scope="col">Included</th><th scope="col">Benefit</th></tr>
+                        </thead>
+                        <tbody>                 
+                            <tr><td class="symbol">❌</td><td>Community Impact Recognition</td></tr>
+                            <tr><td class="symbol">❌</td><td>VIP Events</td></tr>
+                            <tr><td class="symbol">❌</td><td>Marketing Boost</td></tr>
+                            <tr><td class="symbol">&#x2714;</td><td>Directory Listing</td></tr>
+                            <tr><td class="symbol">&#x2714;</td><td>Chamber Recognition Seal</td></tr>
+                        </tbody>    
+                    </table>
+                </section>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div id="footer-contact">
+            <img src="images/cherry-grove-logo.webp" alt="Cherry Grove Logo">
+            <section>
+                <h3>Contact Us</h3>
+                <ul>
+                    <li>Phone: 780.342.4444</li>
+                    <li>Email: <a href="mailto:cherrygrovechamber@gmail.com">cherrygrovechamber@gmail.com</a></li>
+                    <li><br>Address: <br>6755 Cherry Lane<br> Cherry Grove, Alberta<br> Canada, T0A 0T0</li>
+                </ul>
+            </section>
+            <div class="map">
+                <h3>Visit Us</h3>
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d18597.562963737375!2d-110.11779492814199!3d54.36236389646338!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x53a7c5929b33887b%3A0x16b2897281cb50a7!2sCherry%20Grove%2C%20AB%20T0A%200T0!5e0!3m2!1sen!2sca!4v1696667766722!5m2!1sen!2sca"
+                    width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </div>
+        <div id="footer-end">
+            <p>Sheena Hamilton: WDD230</p> 
+            <p id="lastModified"></p>
+        </div>
+    </footer>
+    <script src="scripts/getdates.js"></script>
+    <script src="scripts/hamburgermenu.js"></script>
+    <script src="scripts/darkmode.js"></script>
+    <script src="scripts/joindate.js"></script>
+</body>
+</html>

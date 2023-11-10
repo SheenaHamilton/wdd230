@@ -94,3 +94,41 @@
     background-color: var(--accent3-color);
     color: var(--darkmode-text);
 }
+
+/* ============= Dark Join ============= */
+
+.darkmode #join-page h3 {
+    color: var(--accent1-color);
+}
+
+.darkmode #join-page h3 {
+    color: var(--accent1-color);
+}
+
+
+.darkmode form fieldset,
+.darkmode form label,
+.darkmode form input,
+.darkmode form div {
+    background-color: var(--darkmode-color-card);
+    color: white;
+}
+
+.darkmode form input,
+.darkmode form textarea {
+    background-color:rgb(196, 197, 199);
+    color: black;
+}
+
+.darkmode form legend {
+    color: var(--accent1-color);
+}
+
+.darkmode #form-membership p {
+    color:var(--accent1-color);
+}
+
+.darkmode .submitBtn {
+    background-color: var(--accent3-color);
+    color: white;
+}

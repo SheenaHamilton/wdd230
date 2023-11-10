@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cherry Grove Chamber of Commerce</title>
+    <meta name="description"
+        content="Cherry Grove Chamber of Commerce: Find information about events, local services, and the area.">
+    <meta name="author" content="Sheena Hamilton">
+    <link rel="icon" href="favicon.ico">
+    <!-- Add Website stylesheets -->
+    <link href="styles/normalize.css" rel="stylesheet">
+    <link href="styles/base.css" rel="stylesheet">
+    <link href="styles/medium.css" rel="stylesheet">
+    <link href="styles/larger.css" rel="stylesheet">
+    <link href="styles/darkmode.css" rel="stylesheet">
+
+    <meta property="og:title" content="Cherry Grove Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://sheenahamilton.github.io/wdd230/chamber/images/cherry-grove.webp">
+    <meta property="og:url" content="https://sheenahamilton.github.io/wdd230/chamber/">
+</head>
+
+<body>
+    <header>
+        <span class="cherry">Cherry Grove <br> Chamber of Commerce</span>
+        <nav>
+            <button id="hamburgermenu"></button>
+            <ul class="navigationmenu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="">Directory</a></li>
+                <li><a href="join.html" class="active">Join</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="tools">
+            <a href="#" class="social"><img id="facebook" src="images/facebook.svg" alt="facebook icon"></a>
+            <p>Dark Mode</p>
+            <label class="switch">
+                <input id="darkmode" type="checkbox">
+                <span class="slider round"></span>
+            </label>
+        </div>
+        <div id="thank-you">
+            <h2>Webpage Rating Submission</h2>
+            <p>Thank you for ---- Your response has been recorded.</p>
+        </div>
+    </main>
+    <footer>
+        <div id="footer-contact">
+            <img src="images/cherry-grove-logo.webp" alt="Cherry Grove Logo">
+            <section>
+                <h3>Contact Us</h3>
+                <ul>
+                    <li>Phone: 780.342.4444</li>
+                    <li>Email: <a href="mailto:cherrygrovechamber@gmail.com">cherrygrovechamber@gmail.com</a></li>
+                    <li><br>Address: <br>6755 Cherry Lane<br> Cherry Grove, Alberta<br> Canada, T0A 0T0</li>
+                </ul>
+            </section>
+            <div class="map">
+                <h3>Visit Us</h3>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d18597.562963737375!2d-110.11779492814199!3d54.36236389646338!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x53a7c5929b33887b%3A0x16b2897281cb50a7!2sCherry%20Grove%2C%20AB%20T0A%200T0!5e0!3m2!1sen!2sca!4v1696667766722!5m2!1sen!2sca"
+                    width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </div>
+        <div id="footer-end">
+            <p>Sheena Hamilton: WDD230</p>
+            <p id="lastModified"></p>
+        </div>
+    </footer>
+    <script src="scripts/getdates.js"></script>
+    <script src="scripts/hamburgermenu.js"></script>
+    <script src="scripts/darkmode.js"></script>
+</body>
+
+</html>

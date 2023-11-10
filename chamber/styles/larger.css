@@ -80,4 +80,23 @@
     #leftbar {
         grid-row: 1;
     }
+
+    /* ============= Join Page ============= */
+
+    #form-join {
+        width: 90%;
+        margin: 0 auto ;
+
+    }
+
+    #benefits h2 {
+        text-align: left;
+    }
+
+    #join-page {
+        display: grid;
+        grid-template-columns: 1.3fr 1fr;
+        width: 90%;
+        margin: 20px auto 40px auto;
+    }
 }
