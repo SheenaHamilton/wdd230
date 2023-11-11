@@ -1,0 +1,38 @@
+{
+    "familyname": "Smith",
+    "startdate": "2000-01-01",
+    "familysize": 6,
+    "bishopricvisit": "2023-11-01",
+    "familymembers": [
+        {
+            "name": "John Smith",
+            "gender": "Male",
+            "birthdate": "1975-05-10"
+        },
+        {
+            "name": "Jane Smith",
+            "gender": "Female",
+            "birthdate": "1980-03-15"
+        },
+        {
+            "name": "Michael Smith",
+            "gender": "Male",
+            "birthdate": "2005-08-22"
+        },
+        {
+            "name": "Emily Smith",
+            "gender": "Female",
+            "birthdate": "2008-11-30"
+        },
+        {
+            "name": "David Smith",
+            "gender": "Male",
+            "birthdate": "2012-04-18"
+        },
+        {
+            "name": "Olivia Smith",
+            "gender": "Female",
+            "birthdate": "2015-07-05"
+        }
+    ]
+}
