@@ -1,0 +1,56 @@
+:root {
+        --header-font: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}
+
+html {
+    width: 100vw;
+}
+
+main {
+    width: 90%;
+    margin: auto auto;
+}
+#cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)) ;
+
+    row-gap: 5px;
+    column-gap: 5px;
+}
+
+.card {
+    background-color: rgb(193, 217, 244);
+    border: 1px rgb(68, 68, 181) solid;
+    padding: 5% 10%;
+    width: 80%;
+    text-align: center;
+    
+}
+
+h1 {
+    font-size: 1.8em;
+    color: rgb(68, 68, 181);
+    text-align: center;
+}
+h2 {
+    font-family: var(--header-font);
+    font-size: 1em;
+    color: rgb(68, 68, 181)
+}
+
+img {
+    width:80%;
+    height: auto;
+    box-shadow: 0 4px 8px 5px rgba(0, 0, 0,0.4 );
+    margin-top: 10px;
+}
+
+p {
+    width:100%;
+    white-space: nowrap;
+    font-size: .8em;
+    margin-block-start: .2em;
+    margin-block-end: .2em;
+}
+
