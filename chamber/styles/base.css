@@ -740,6 +740,22 @@ form input.submitBtn {
     border-left: var(--primary-color) solid 6px;
 }
 
+#thank-you {
+    width: 90%;
+    max-width: 700px;
+    text-align: center;
+    margin: auto auto;
+}
+
+#thank-you p {
+    background-color: var(--accent1-color);
+    font-size: 1.2em;
+    margin: 40px 0;
+    width: 90%;
+    padding: 30px 5% 30px 5%;
+    border-radius: 20px;
+}
+
 /* ============= Member Card Control ============= */
 
 .member-card {

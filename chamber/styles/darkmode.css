@@ -132,3 +132,11 @@
     background-color: var(--accent3-color);
     color: white;
 }
+
+.darkmode #thank-you p {
+    background-color: var(--darkmode-color-card);
+}
+
+.darkmode #thank-you .cherry::first-line {
+    color: var(--primary-color);
+}
