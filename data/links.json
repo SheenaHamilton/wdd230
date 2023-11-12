@@ -1,0 +1,134 @@
+{
+    "lessons": [
+        {
+            "lesson": "01",
+            "links": [
+                {
+                    "url": "lesson01/holygrail.html",
+                    "title": "Holy Layout"
+                },
+                {
+                    "url": "lesson01/media-query.html",
+                    "title": "Media Query"
+                }
+            ]
+        },
+        {
+            "lesson": "02",
+            "links": [
+                {
+                    "url": "lesson02/design.html",
+                    "title": "Design Principals"
+                },
+                {
+                    "url": "lesson02/design-principles.html",
+                    "title": "Design Principals Document"
+                }
+            ]
+        },
+        {
+            "lesson": "03",
+            "links": [
+                {
+                    "url": "lesson03/images/FinishedScreenshotExercise.webp",
+                    "title": "Exercise Screenshot"
+                },
+                {
+                    "url": "https://codepen.io/SheenaHamilton/pen/GRPdVEL",
+                    "title": "CodePenExercise"
+                },
+                {
+                    "url": "https://codepen.io/SheenaHamilton/pen/qBLYeQJ",
+                    "title": "Hamburger Menu"
+                },
+                {
+                    "url": "lesson03/chamber-site-plan.html",
+                    "title": "Chamber Site Plan"
+                }
+            ]
+        },
+        {
+            "lesson": "04",
+            "links": [
+                {
+                    "url": "https://codepen.io/SheenaHamilton/pen/bGOmEWx",
+                    "title": "Psuedo CodePen"
+                }
+            ]
+        },
+        {
+            "lesson": "05",
+            "links": [
+                {
+                    "url": "lesson05/bom.html",
+                    "title": "Book of Mormon - Top 10"
+                }
+            ]
+        },
+        {
+            "lesson": "06",
+            "links": [
+                {
+                    "url": "lesson06/images/landscape.webp",
+                    "title": "Webp Image conversion"
+                },
+                {
+                    "url": "lesson06/responsive-images.html",
+                    "title": "Responsive Images"
+                }
+            ]
+        },
+        {
+            "lesson": "07",
+            "links": [
+                {
+                    "url": "lesson07/lazyload.html",
+                    "title": "Lazy Loading Images"
+                },
+                {
+                    "url": "lesson07/bom.html",
+                    "title": "BOM Local Storage"
+                }
+            ]
+        },
+        {
+            "lesson": "08",
+            "links": [
+                {
+                    "url": "lesson08/tablebuild.html",
+                    "title": "Tables"
+                },
+                {
+                    "url": "lesson08/form-start/index.html",
+                    "title": "HTML Forms"
+                },
+                {
+                    "url": "form.html",
+                    "title": "Homepage Form"
+                }
+            ]
+        },
+        {
+            "lesson": "09",
+            "links": [
+                {
+                    "url": "lesson09/new-ward-members.json",
+                    "title": "JSON New Ward Members"
+                },
+                {
+                    "url": "lesson09/prophets.html",
+                    "title": "Prophets"
+                }
+            ]
+        },
+        {
+            "lesson": "10",
+            "links": [
+                {
+                    "url": "",
+                    "title": ""
+                }
+            ]
+        }
+    ]
+}
