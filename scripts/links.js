@@ -1,6 +1,6 @@
 
 const lessonList = document.querySelector("#links");
-//const baseURL = "https://sheenahamilton.github.io/wdd230/";
+const baseURL = "https://sheenahamilton.github.io/wdd230/";
 const linksURL = "https://sheenahamilton.github.io/wdd230/data/links.json";
 
 async function getLinks() {
