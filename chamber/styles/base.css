@@ -5,6 +5,7 @@
     --primary-color: #1D3557;
     --secondary-color: #eeeeee;
     --accent1-color: #bbd9da;
+    --accent1b-color: #c8dbdb;
     --accent2-color: #c9d2d9;
     --accent3-color: #C1121F;
     --navmenu-color: #eeeeee;
@@ -52,6 +53,15 @@ h1 {
     font-size: 1.2em;
 }
 
+.pagetitle {
+    text-align: center;
+}
+
+.pageintro {
+    width: 80%;
+    text-align: center;
+    margin: auto auto;
+}
 
 .cherry::first-line{
     color: var(--accent3-color);
@@ -70,6 +80,8 @@ h2 h3 {
 p {
     font-family: var(--paragraph-font);
     color: var(--paragraph-color-on-white);
+    margin-block-start: 0;
+    margin-block-end: 0;
 }
 
 ul {
@@ -85,6 +97,17 @@ hr {
     width: 90%;
     border: solid .5px black;
 }
+
+a {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+a:hover {
+    font-weight: 700;
+    text-shadow: 0px 0px .1px #000000
+}
+
 /* ============= Social Media ============= */
 
 .tools .social {
@@ -117,8 +140,6 @@ hr {
     display: inline-block;
     padding-right: 5px;
     color: var(--accent2-color);
-    margin-block-start: 0em;
-    margin-block-end: 0em;
     vertical-align: middle;
 }
 
@@ -383,8 +404,6 @@ nav {
     padding-top: 3px;
     padding-bottom: 0px;
     font-size: large;
-    margin-block-start: 0;
-    margin-block-end: 0;
 }
 
 .card ul {
@@ -622,9 +641,7 @@ footer a:hover, a:visited {
 
 /* ============= Join Page ============= */
 
-.jointitle {
-    text-align: center;
-}
+
 
 #join-page {
     display: grid;
@@ -705,7 +722,6 @@ form textarea {
 #form-membership p {
     color:var(--primary-color);
     padding: 0 .75rem 5px 0px;
-    margin-block-start: 0em;
     margin-block-end: 0.1em;
     font-size: 1.1rem;
     font-weight: 700;
@@ -814,3 +830,158 @@ form input.submitBtn {
 .member-card table td {
     font-size: 1.2em;
 }
+
+/* ============= Directory Page ============= */
+
+
+#directory {
+    display: grid;
+    width: 90vw;
+    grid-template-columns: minmax(0, 90vw);
+    margin: 0 5vw 30px 5vw;
+
+}
+
+#directory .member-info:nth-child(even) {
+    background-color: var(--accent1b-color);
+}
+
+#directory-head p {
+    font-size: 1.2em;
+}
+
+.member-info, #directory-head{
+    display: grid;
+    grid-template-columns: minmax(0,.2fr) minmax(0, .9fr) minmax(0, .8fr) minmax(0, .9fr) minmax(0, 1fr) minmax(0, .2fr);
+    font-size: .9em;
+    column-gap: 10px;
+    padding: 10px 0;
+}
+.member-info img {
+    width: 25px;
+    height: auto;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.member-info p {
+    font-weight: bolder;
+}
+
+.phonenumbers a {
+    display: block;
+    word-wrap: normal;
+}
+
+.member-info a {
+        word-wrap: break-word;
+}
+.member-info .membership img {
+    width: 25px;
+    height: auto;
+    margin: auto auto;
+}
+
+/*-----------------Directory Single View-----------------*/
+
+.grid-view #directory-head {
+    display: none;
+}
+
+#directory.grid-view .member-info {
+    display: grid;
+    grid-template-columns: minmax(0, .5fr) minmax(0, 2fr) minmax(0, .5fr) ;
+    grid-template-areas:    "logo       name        name"
+                            "address    address     membership"
+                            "contact    contact     membership"
+                            "website    website     membership";
+    font-size: .9em;
+    width:90%;
+    max-width: 400px;
+    background-color: white;
+    border: 5px var(--accent1-color) solid;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 10px 3% 10px 3%;
+    margin: 20px auto;
+}
+
+.grid-view .member-info p {
+    grid-area: name;
+    font-size: 1.4em;
+    color: var(--primary-color);
+}
+
+.grid-view .member-info .logo-img {
+    grid-area: logo;
+    width: 100%;
+    height: auto;
+
+}
+
+.grid-view .member-info .membership {
+    grid-area: membership;
+    width: 100%;
+    height: auto;
+    margin: auto auto;
+}
+
+.grid-view .member-info address {
+    grid-area: address;
+    font-size: 1em;
+    line-height: 2em;
+}
+
+.grid-view .member-info .website {
+    grid-area: website;
+    font-size: 1em;
+    line-height: 2em;
+}
+
+.grid-view .member-info .phonenumbers {
+    grid-area: contact;
+    font-size: 1em;
+    line-height: 2em;
+}
+
+/* Button View */
+    .directory-view {
+        display: flex;
+        justify-content: end;
+        padding: 10px;
+        width: 85vw;
+        margin: auto auto;
+    }
+
+    .directory-view button {
+        position: relative;
+        padding: 2px 15px;
+        cursor: pointer;
+        background-color: var(--accent1-color);
+        border: var(--accent1-color) solid 2px;
+        border-radius: 5px;
+        margin: 0 5px;
+    }
+
+    .directory-view button:hover {
+        filter: brightness(110%);
+        border: var(--primary-color) solid 2px;
+    }
+
+    .directory-view button:active {
+        filter: brightness(100%);
+    }
+
+    #button-list::after {
+        content: "☰";
+    }
+
+    #button-grid::after {
+        content: "▭";
+    }
+
+    .directory-view button.list-active {
+        filter: brightness(110%);
+        border: var(--primary-color) solid 2px;
+    }

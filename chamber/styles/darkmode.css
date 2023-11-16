@@ -11,6 +11,12 @@
     color:black;
 }
 
+.darkmode a {
+    text-decoration: none;
+    color: var(--accent1-color);
+}
+
+
 /* ============= Dark Footer ============= */
 .darkmode footer h3 {
     color: var(--darkmode-text);
@@ -139,4 +145,18 @@
 
 .darkmode #thank-you .cherry::first-line {
     color: var(--primary-color);
+}
+
+/* ============= Dark Directory ============= */
+.darkmode #directory.grid-view .member-info {
+    background-color:var(--darkmode-color-card);
+    border: 5px var(--darkmode-color) solid;
+}
+
+.darkmode .member-info p {
+    color: var(--accent1-color);
+}
+
+.darkmode #directory .member-info:nth-child(even) {
+    background-color: var(--darkmode-color-card);
 }

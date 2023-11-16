@@ -4,9 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cherry Grove Chamber of Commerce: Joined Thank You!</title>
-    <meta name="description"
-        content="Cherry Grove Chamber of Commerce: Thank you for joining the Chamber.">
+    <title>Cherry Grove Chamber of Commerce: Directory</title>
+    <meta name="description" content="Cherry Grove Chamber of Commerce: Find information about local businesses">
     <meta name="author" content="Sheena Hamilton">
     <link rel="icon" href="favicon.ico">
     <!-- Add Website stylesheets -->
@@ -30,12 +29,12 @@
             <ul class="navigationmenu">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="discover.html">Discover</a></li>
-                <li><a href="directory.html">Directory</a></li>
-                <li><a href="join.html" class="active">Join</a></li>
+                <li><a href="#" class="active">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
             </ul>
         </nav>
     </header>
-    <main>
+    <main> 
         <div class="tools">
             <a href="#" class="social"><img id="facebook" src="images/facebook.svg" alt="facebook icon"></a>
             <p>Dark Mode</p>
@@ -44,11 +43,23 @@
                 <span class="slider round"></span>
             </label>
         </div>
-        <h1 class="jointitle fontstyle-1">Join the Chamber of Commerce</h1>
-        <div id="thank-you">
-            <h2>We received your membership</h2>
-            <p class="cherry">Welcome to the Chamber<br><br>
-                We can't wait to connect with you. An email will be sent shortly with your membership details. </p>
+        <h1 class="pagetitle fontstyle-1">Directory</h1>
+        <hr class="divider-1 ">
+        <p class="pageintro">Welcome to our Directory, where the heartbeat of our community resides in the businesses and services that shape our local identity. Dive into a new experience, support your neighbors, and uncover the charm that makes our town thrive.</p>
+     
+        <div class="directory-view">
+            <button id="button-list" class="list-active">List</button>
+            <button id="button-grid">Single </button>
+        </div>
+        <div id="directory" >
+            <div id="directory-head">
+                <p></p>
+                <p>Name</p>
+                <p>Address</p>
+                <p>Contact</p>
+                <p>Email</p>
+                <p>Level</p>
+            </div>
         </div>
     </main>
     <footer>
@@ -64,7 +75,7 @@
             </section>
             <div class="map">
                 <h3>Visit Us</h3>
-                <iframe
+                <iframe 
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d18597.562963737375!2d-110.11779492814199!3d54.36236389646338!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x53a7c5929b33887b%3A0x16b2897281cb50a7!2sCherry%20Grove%2C%20AB%20T0A%200T0!5e0!3m2!1sen!2sca!4v1696667766722!5m2!1sen!2sca"
                     width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy"
                     referrerpolicy="no-referrer-when-downgrade">
@@ -72,13 +83,14 @@
             </div>
         </div>
         <div id="footer-end">
-            <p>Sheena Hamilton: WDD230</p>
+            <p>Sheena Hamilton: WDD230</p> 
             <p id="lastModified"></p>
         </div>
     </footer>
     <script src="scripts/getdates.js"></script>
     <script src="scripts/hamburgermenu.js"></script>
     <script src="scripts/darkmode.js"></script>
+    <script src="scripts/members.js"></script>
+    <script src="scripts/directoryview.js"></script>
 </body>
-
 </html>

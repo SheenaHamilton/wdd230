@@ -1,0 +1,125 @@
+{
+    "chambermembers": [
+        {
+            "name": "Smith's Auto Repair",
+            "address": "123 Mechanic Lane, Townsville, State",
+            "phone": [
+                {
+                    "type": "Service Desk",
+                    "phonenumber": "780-555-1234"
+                },
+                {
+                    "type": "Emergency Towing",
+                    "phonenumber": "780-555-5678"
+                }
+            ],
+            "websiteurl": "http://www.smithsautorepair.com",
+            "imagelogo": "smiths_auto_logo.png",
+            "membershiplevel": "Gold"
+        },
+        {
+            "name": "Rosewood Bed and Breakfast",
+            "address": "456 Rose Street, Villageton, State",
+            "phone": [
+                {
+                    "type": "Reservations",
+                    "phonenumber": "587-555-9876"
+                }
+            ],
+            "websiteurl": "http://www.rosewoodbnb.com",
+            "imagelogo": "rosewood_logo.png",
+            "membershiplevel": "Silver"
+        },
+        {
+            "name": "Main Street Diner",
+            "address": "789 Main Street, Cityville, State",
+            "phone": [
+                {
+                    "type": "General Inquiries",
+                    "phonenumber": "587-555-5432"
+                }
+            ],
+            "websiteurl": "http://www.mainstreetdiner.net",
+            "imagelogo": "mainstreetdiner_logo.png",
+            "membershiplevel": "Bronze"
+        },
+        {
+            "name": "Hillside Auto Body",
+            "address": "101 Hillside Avenue, Hamletville, State",
+            "phone": [
+                {
+                    "type": "Collision Repair",
+                    "phonenumber": "780-555-8765"
+                }
+            ],
+            "websiteurl": "http://www.hillsideautobody.org",
+            "imagelogo": "hillside_auto_logo.png",
+            "membershiplevel": "Gold"
+        },
+        {
+            "name": "Sunrise Inn Bed and Breakfast",
+            "address": "321 Sunrise Lane, Countryside, State",
+            "phone": [
+                {
+                    "type": "Front Desk",
+                    "phonenumber": "780-555-2345"
+                }
+            ],
+            "websiteurl": "http://www.sunriseinnbnb.com",
+            "imagelogo": "sunriseinn_logo.png",
+            "membershiplevel": "Gold"
+        },
+        {
+            "name": "Town Square Cafe",
+            "address": "654 Town Square, Suburbia, State",
+            "phone": [
+                {
+                    "type": "Catering",
+                    "phonenumber": "780-555-6789"
+                }
+            ],
+            "websiteurl": "http://www.townsquarecafe.com",
+            "imagelogo": "townsquarecafe_logo.png",
+            "membershiplevel": "Silver"
+        },
+        {
+            "name": "Maple Street Bed and Breakfast",
+            "address": "987 Maple Avenue, Metropolis, State",
+            "phone": [
+                {
+                    "type": "Reservations",
+                    "phonenumber": "587-555-4321"
+                }
+            ],
+            "websiteurl": "http://www.maplestreetbnb.co",
+            "imagelogo": "maplestreet_logo.png",
+            "membershiplevel": "Bronze"
+        },
+        {
+            "name": "Community Outreach Foundation",
+            "address": "555 Charity Lane, Townsville, State",
+            "phone": [
+                {
+                    "type": "Donations",
+                    "phonenumber": "201-555-9999"
+                }
+            ],
+            "websiteurl": "http://www.communityoutreach.org",
+            "imagelogo": "communityoutreach_logo.png",
+            "membershiplevel": "NonProfit"
+        },
+        {
+            "name": "Hope for Tomorrow",
+            "address": "789 Hope Street, Villageton, State",
+            "phone": [
+                {
+                    "type": "Support",
+                    "phonenumber": "201-555-7777"
+                }
+            ],
+            "websiteurl": "http://www.hopefortomorrow.org",
+            "imagelogo": "hopefortomorrow_logo.png",
+            "membershiplevel": "NonProfit"
+        }
+    ]
+}
