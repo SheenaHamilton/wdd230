@@ -267,7 +267,7 @@ nav ul li {
 
 #weather-info #current-temp {
     grid-area: temp;
-    font-size: 1.5em;
+    font-size: 1.2em;
 }
 
 #weather-info #desc {
