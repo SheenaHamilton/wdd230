@@ -165,7 +165,8 @@
     background-color: var(--darkmode-color-card);
 }
 
-.darkmode .directory-view button:active, .directory-view button.list-active {
+.darkmode .directory-view button:active, 
+.darkmode .directory-view button.list-active {
     border: var(--accent3-color) solid 2px;
 }
 
