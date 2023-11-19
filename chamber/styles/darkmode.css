@@ -153,16 +153,18 @@
     border: 5px var(--darkmode-color) solid;
 }
 
-.darkmode .member-info p {
-    color: var(--accent1-color);
+
+.darkmode #directory .member-info {
+    background-color: var(--darkmode-color-card);
+    color: white;
 }
 
 .darkmode #directory .member-info {
     background-color: var(--darkmode-color-card);
 }
 
-.darkmode #directory .member-info {
-    background-color: var(--darkmode-color-card);
+.darkmode #directory .member-info a {
+    color: var(--darkmode-text);
 }
 
 .darkmode .directory-view button:active, 
