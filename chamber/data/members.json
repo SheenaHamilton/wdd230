@@ -14,7 +14,7 @@
                 }
             ],
             "websiteurl": "http://www.smithsautorepair.com",
-            "imagelogo": "smiths_auto_logo.png",
+            "imagelogo": "images/car-burst-solid.svg",
             "membershiplevel": "Gold"
         },
         {
@@ -27,7 +27,7 @@
                 }
             ],
             "websiteurl": "http://www.rosewoodbnb.com",
-            "imagelogo": "rosewood_logo.png",
+            "imagelogo": "images/pagelines.svg",
             "membershiplevel": "Silver"
         },
         {
@@ -40,7 +40,7 @@
                 }
             ],
             "websiteurl": "http://www.mainstreetdiner.net",
-            "imagelogo": "mainstreetdiner_logo.png",
+            "imagelogo": "images/burger-solid.svg",
             "membershiplevel": "Bronze"
         },
         {
@@ -53,7 +53,7 @@
                 }
             ],
             "websiteurl": "http://www.hillsideautobody.org",
-            "imagelogo": "hillside_auto_logo.png",
+            "imagelogo": "images/car-on-solid.svg",
             "membershiplevel": "Gold"
         },
         {
@@ -66,7 +66,7 @@
                 }
             ],
             "websiteurl": "http://www.sunriseinnbnb.com",
-            "imagelogo": "sunriseinn_logo.png",
+            "imagelogo": "images/sun-solid.svg",
             "membershiplevel": "Gold"
         },
         {
@@ -79,7 +79,7 @@
                 }
             ],
             "websiteurl": "http://www.townsquarecafe.com",
-            "imagelogo": "townsquarecafe_logo.png",
+            "imagelogo": "images/mug-hot-solid.svg",
             "membershiplevel": "Silver"
         },
         {
@@ -92,7 +92,7 @@
                 }
             ],
             "websiteurl": "http://www.maplestreetbnb.co",
-            "imagelogo": "maplestreet_logo.png",
+            "imagelogo": "images/house-chimney-window-solid.svg",
             "membershiplevel": "Bronze"
         },
         {
@@ -105,7 +105,7 @@
                 }
             ],
             "websiteurl": "http://www.communityoutreach.org",
-            "imagelogo": "communityoutreach_logo.png",
+            "imagelogo": "images/group-arrows-rotate-solid.svg",
             "membershiplevel": "NonProfit"
         },
         {
@@ -118,7 +118,7 @@
                 }
             ],
             "websiteurl": "http://www.hopefortomorrow.org",
-            "imagelogo": "hopefortomorrow_logo.png",
+            "imagelogo": "images/hand-holding-heart-solid.svg",
             "membershiplevel": "NonProfit"
         }
     ]

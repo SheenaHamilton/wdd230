@@ -103,11 +103,6 @@ a {
     color: var(--primary-color);
 }
 
-a:hover {
-    font-weight: 700;
-    text-shadow: 0px 0px .1px #000000
-}
-
 /* ============= Social Media ============= */
 
 .tools .social {
@@ -835,9 +830,11 @@ form input.submitBtn {
 
 
 #directory {
+    width: 90%;
     display: grid;
-    width: 90vw;
-    grid-template-columns: minmax(0, 90vw);
+    grid-template-columns: minmax(300px, 1fr);
+    row-gap: 5px;
+    column-gap: 20px;
     margin: 0 5vw 30px 5vw;
 
 }
@@ -851,18 +848,21 @@ form input.submitBtn {
 }
 
 .member-info, #directory-head{
+    width:100%;
     display: grid;
-    grid-template-columns: minmax(0,.2fr) minmax(0, .9fr) minmax(0, .8fr) minmax(0, .9fr) minmax(0, 1fr) minmax(0, .2fr);
+    grid-template-columns: minmax(0,.4fr) minmax(0, .8fr) minmax(0, .8fr) minmax(0, .9fr) minmax(0, 1fr) minmax(0, .4fr);
     font-size: .9em;
     column-gap: 10px;
     padding: 10px 0;
+    overflow: hidden;
 }
 .member-info img {
-    width: 25px;
+    width: 30px;
     height: auto;
     text-indent: 100%;
     white-space: nowrap;
     overflow: hidden;
+    margin: 0 auto;
 }
 
 .member-info p {
@@ -883,7 +883,15 @@ form input.submitBtn {
     margin: auto auto;
 }
 
-/*-----------------Directory Single View-----------------*/
+/*-----------------Directory Grid View-----------------*/
+
+#directory.grid-view {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    row-gap: 20px;
+    column-gap: 20px;
+    margin: 0 5vw 30px 5vw;
+}
 
 .grid-view #directory-head {
     display: none;
@@ -891,7 +899,7 @@ form input.submitBtn {
 
 #directory.grid-view .member-info {
     display: grid;
-    grid-template-columns: minmax(0, .5fr) minmax(0, 2fr) minmax(0, .5fr) ;
+    grid-template-columns:  minmax(0, .5fr) minmax(0, 2fr) minmax(0, .5fr) ;
     grid-template-areas:    "logo       name        name"
                             "address    address     membership"
                             "contact    contact     membership"
@@ -899,12 +907,12 @@ form input.submitBtn {
     font-size: .9em;
     width:90%;
     max-width: 400px;
-    background-color: white;
-    border: 5px var(--accent1-color) solid;
+    background-color: var(--secondary-color);
+    border: 2px var(--primary-color) solid;
     border-radius: 10px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     padding: 10px 3% 10px 3%;
-    margin: 20px auto;
+    margin: 0 auto;
 }
 
 .grid-view .member-info p {
@@ -945,43 +953,56 @@ form input.submitBtn {
     line-height: 2em;
 }
 
+/* Single View */
+main #directory.single-view {
+    display: grid;
+    grid-template-columns: minmax(400px, 1fr);
+    row-gap: 20px;
+    column-gap: 20px;
+    margin: 0 auto 30px auto;
+}
+
 /* Button View */
-    .directory-view {
-        display: flex;
-        justify-content: end;
-        padding: 10px;
-        width: 85vw;
-        margin: auto auto;
-    }
+.directory-view {
+    display: flex;
+    justify-content: end;
+    padding: 30px 0 10px 0;
+    width: 90%;
+    margin: auto auto;
+}
 
-    .directory-view button {
-        position: relative;
-        padding: 2px 15px;
-        cursor: pointer;
-        background-color: var(--accent1-color);
-        border: var(--accent1-color) solid 2px;
-        border-radius: 5px;
-        margin: 0 5px;
-    }
+.directory-view button {
+    position: relative;
+    padding: 2px 15px;
+    cursor: pointer;
+    background-color: var(--accent1-color);
+    border: var(--accent1-color) solid 2px;
+    border-radius: 5px;
+    margin: 0 5px;
+}
 
-    .directory-view button:hover {
-        filter: brightness(110%);
-        border: var(--primary-color) solid 2px;
-    }
+.directory-view button:hover {
+    filter: brightness(110%);
+    border: var(--primary-color) solid 2px;
+}
 
-    .directory-view button:active {
-        filter: brightness(100%);
-    }
+.directory-view button:active {
+    filter: brightness(100%);
+}
 
-    #button-list::after {
-        content: "☰";
-    }
+#button-list::after {
+    content: "☰";
+}
 
-    #button-grid::after {
-        content: "▭";
-    }
+#button-grid::after {
+    content: "☷";
+}
 
-    .directory-view button.list-active {
-        filter: brightness(110%);
-        border: var(--primary-color) solid 2px;
-    }
+#button-single::after {
+    content: "☐";
+}
+
+.directory-view button.list-active {
+    filter: brightness(110%);
+    border: var(--primary-color) solid 2px;
+}

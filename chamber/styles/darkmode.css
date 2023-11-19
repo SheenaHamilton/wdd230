@@ -157,6 +157,15 @@
     color: var(--accent1-color);
 }
 
-.darkmode #directory .member-info:nth-child(even) {
+.darkmode #directory .member-info {
     background-color: var(--darkmode-color-card);
 }
+
+.darkmode #directory .member-info {
+    background-color: var(--darkmode-color-card);
+}
+
+.darkmode .directory-view button:active, .directory-view button.list-active {
+    border: var(--accent3-color) solid 2px;
+}
+

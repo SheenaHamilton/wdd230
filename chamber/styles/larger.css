@@ -99,34 +99,4 @@
         width: 90%;
         margin: 20px auto 40px auto;
     }
-
-    /*=============== Directory ============= */
-
-    #directory.grid-view .member-info {
-        display: grid;
-        grid-template-columns: minmax(0, 1fr) minmax(0, 2fr) minmax(0, 2fr) minmax(0, .5fr);
-        grid-template-areas: "logo    name    name        name"
-                            "logo    address contact     membership"
-                            "logo    address contact     membership"
-                            "logo    website website     website";
-        max-width: 90%;
-
-    }
-
-    .grid-view .member-info p {
-        font-size: 1.6em;
-    }
-
-    .grid-view .member-info address {
-        font-size: 1.1em;
-    }
-
-    .grid-view .member-info .website {
-        font-size: 1.3em;
-    }
-
-    .grid-view .member-info .phonenumbers {
-        font-size: 1.1em;
-    }
-
 }

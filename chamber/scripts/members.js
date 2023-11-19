@@ -61,7 +61,7 @@ const displayMembers = (chambermembers) => {
                 membershipimg = "images/member-bronze.svg";
                 break;
             case "NonProfit": 
-                membershipimg = "mimages/member-Nonprofit.svg";
+                membershipimg = "images/member-nonprofit.svg";
                 break;
         };
         memberLevel.setAttribute("src", membershipimg)
