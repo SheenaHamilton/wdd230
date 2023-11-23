@@ -23,16 +23,22 @@
 
 <body>
     <header>
-        <span class="cherry">Cherry Grove <br> Chamber of Commerce</span>
-        <nav>
-            <button id="hamburgermenu"></button>
-            <ul class="navigationmenu">
-                <li><a href="#" class="active">Home</a></li>
-                <li><a href="discover.html">Discover</a></li>
-                <li><a href="directory.html">Directory</a></li>
-                <li><a href="join.html">Join</a></li>
-            </ul>
-        </nav>
+        <div id="site-banner" class="banner">
+            <span>Join us for our Chamber of Commerce meet and greet, Wednesday at 7:00 p.m. All visitors are welcome!</span>
+            <button id="bannerclose">✕</button>
+        </div>
+        <div id="header">
+            <span class="cherry">Cherry Grove <br> Chamber of Commerce</span>
+            <nav>
+                <button id="hamburgermenu"></button>
+                <ul class="navigationmenu">
+                    <li><a href="#" class="active">Home</a></li>
+                    <li><a href="discover.html">Discover</a></li>
+                    <li><a href="directory.html">Directory</a></li>
+                    <li><a href="join.html">Join</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
     <main> 
         <div class="hero-img">
@@ -86,10 +92,19 @@
                     </li>
                 </ul>
             </section>
-            <section class="card block-style">
-                <h3>Local Weather</h3>
-                <a class="weatherwidget-io" href="https://forecast7.com/en/54d36n110d09/cherry-grove/" data-label_1="CHERRY GROVE"
-                    data-label_2="WEATHER" data-days="7" data-theme="original">CHERRY GROVE WEATHER</a>
+            <section class="card plain-style ">
+                <div id="weather-api">
+                    <div id="weather-current">
+                        <img id="weather-icon" src="" alt="">
+                        <p id="place">Cherry Grove, Alberta</p>
+                        <p id="current-temp"></p>
+                        <p id="desc"></p>
+                    </div>
+                    <div id="weather-forecast">
+                        <div id="forecast-title">Cherry Grove 3 Day Forecast</div>
+                    </div>
+
+                </div>
                 <div id="windchill">
                     <div class="weather-entry">
                         <div>
@@ -148,8 +163,10 @@
     </footer>
     <script src="scripts/getdates.js"></script>
     <script src="scripts/hamburgermenu.js"></script>
+    <script src="scripts/banner.js"></script>
     <script src="scripts/darkmode.js"></script>
     <script src="scripts/weatherapp.js"></script>
     <script src="scripts/windchill.js"></script>
+    <script src="scripts/weather.js"></script>
 </body>
 </html>

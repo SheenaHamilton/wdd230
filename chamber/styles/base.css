@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Gabarito&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Gabarito:wght@400;700&display=swap');
 
 :root {
     /* Color Palette */
@@ -28,7 +28,11 @@ body {
     margin: 0 auto;
 }
 
-header span{
+#header {
+    margin-top: 20px;
+}
+
+#header span{
     display: inline-block;
     padding-top: 0.5em;
     padding-left: 0.5em;
@@ -73,8 +77,9 @@ h1 {
     content: '\1F352';
 }
 
-h2 h3 {
+h2, h3 {
     color: var(--primary-color);
+    font-weight: normal;
 }
 
 p {
@@ -101,6 +106,57 @@ hr {
 a {
     text-decoration: none;
     color: var(--primary-color);
+}
+
+.banner {
+    display: inline-block;
+    background-color: var(--accent1-color);
+    margin-top: 20px;
+    padding: 12px;
+    width: 80%;
+    text-align: center;
+    border-radius: 20px;
+    font-size: 1.2em;
+    color: var(--primary-color);
+}
+
+
+/* ============= Site Banner ============= */
+
+#site-banner {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+    border-radius: 0;
+    color: black;
+}
+
+#site-banner span {
+    display: inline-block;
+    width: 80vw;
+}
+
+#site-banner.hide-banner {
+    display: none;
+}
+
+#bannerclose {
+    position: absolute;
+    right: 0;
+    margin-right: 20px;
+    background-color:var(--accent1-color);
+    border: 3px var(--accent1-color) solid;
+}
+
+#bannerclose:hover {
+    border: 3px var(--accent2-color) solid;
+    border-style: outset;
+}
+
+#bannerclose:active {
+    border-style: inset;
 }
 
 /* ============= Social Media ============= */
@@ -305,8 +361,7 @@ nav {
 
 .navigationmenu li a:hover {
     background-color: var(--accent1-color);
-    color: var(--primary-color);
-    font-weight: 700;
+    color: black;
 }
 
 .show li {
@@ -346,6 +401,10 @@ nav {
     background-color: var(--secondary-color);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     padding: 10px 15px 30px 15px;
+}
+
+.plain-style {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .line-style {
@@ -392,6 +451,7 @@ nav {
     margin: auto auto;
     border: 2px solid rgb(231, 231, 231);
     width: 95%;
+    height: auto;
 }
 
 .card p {
@@ -485,18 +545,102 @@ footer a:hover, a:visited {
 }
 
 /* ============= Weather Control ============= */
-
-.weatherwidget-io frame {
-    margin: 0px 0px;
-    height: 700px;
-
+#weather-api {
+    width: 96%;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+    background-color: var(--primary-color);
+    padding: 0 2%;
 }
 
-#windchill {
+/* Current Weather Information */
+#weather-current {
     display: grid;
-    grid-template-columns: minmax(0, 1fr) minmax(0, .8fr) minmax(0, .5fr);
-    margin-top: 25px;
+    width: 90%;
+    grid-template-areas: 'name  name'
+                        'image  temp'
+                        'description  description';
+    margin: auto auto;
+    text-align: left;
+    margin: 20px auto 20px auto;
+    color: var(--accent2-color)
+}
+
+#weather-current #place {
+    grid-area: name;
+    font-size: 1.5em;
+    margin: 20px auto 20px auto;
+    font-weight: bold;
+}
+
+#weather-current #weather-icon {
+    grid-area: image;
+    width: 150px;
+    margin: auto auto;
+    border: none;
+}
+
+#weather-current #current-temp {
+    grid-area: temp;
+    font-size: 2em;
+    margin: auto 0;
+}
+
+#weather-current #desc {
+    grid-area: description;
+    font-size: 1.2em;
+}
+
+/* Weather Forecast */
+#weather-forecast {
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    grid-template-rows: repeat(10, auto);
+    background-color: #324560;
+    color: var(--accent2-color);
+}
+
+#weather-forecast>*:nth-child(10n+2),
+#weather-forecast>*:nth-child(10n+3),
+#weather-forecast>*:nth-child(10n+4),
+#weather-forecast>*:nth-child(10n+5),
+#weather-forecast>*:nth-child(10n+6) {
+    background-color: var(--primary-color)
+}
+
+#weather-forecast .title,
+#forecast-title {
+    background-color: var(--primary-color);
+    font-size: 1.2em;
+    font-weight: bold;
+    line-height: 2em;
+}
+
+#forecast-title {
+    grid-column: 1/6;
+    text-align: center;
+}
+
+#weather-forecast p{
+    font-size: 1em;
+}
+
+#weather-forecast img {
+    border: none;
+    width:100%;
+    max-width: 50px;
+    height: auto;
+}
+/* =============================================== */
+
+#windchill {
+    width: 96%;
+    display: grid;
+    grid-template-columns: minmax(0, 1.2fr) minmax(0, .7fr) minmax(0, .4fr);
+    margin: 25px 0 25px 0;
     text-align: right;
+    padding: 0 2%;
 }   
 
 #windchill label {
@@ -562,6 +706,10 @@ footer a:hover, a:visited {
     column-gap: 20px;
 }
 
+#photo-gallery  p{
+    padding: 0 0 30px 0;
+}
+
 #photo-gallery h2{
     padding-top: 0.5em;
     padding-left: 0.5em;
@@ -622,17 +770,6 @@ footer a:hover, a:visited {
     border-style: groove;
 }
 
-#welcome-banner {
-    display: inline-block;
-    background-color: var(--accent1-color);
-    margin-top: 20px;
-    padding: 12px;
-    width: 80%;
-    text-align: center;
-    border-radius: 20px;
-    font-size: 1.2em;
-    color: var(--primary-color);
-}
 
 /* ============= Join Page ============= */
 
@@ -719,7 +856,7 @@ form textarea {
     padding: 0 .75rem 5px 0px;
     margin-block-end: 0.1em;
     font-size: 1.1rem;
-    font-weight: 700;
+    font-weight: bold;
     width: 100%;
     max-width: 25rem;
     border-bottom: var(--accent3-color) 4px solid;
@@ -866,7 +1003,7 @@ form input.submitBtn {
 }
 
 .member-info p {
-    font-weight: bolder;
+    font-weight: bold;
 }
 
 .phonenumbers a {
@@ -1006,3 +1143,4 @@ main #directory.single-view {
     filter: brightness(110%);
     border: var(--primary-color) solid 2px;
 }
+
