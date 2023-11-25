@@ -69,8 +69,7 @@ function displayForecastResults(data) {
             datarow.push(date.toLocaleString('en-US', { hour: 'numeric', hour12: true })); 
             datarow.push(`https://openweathermap.org/img/w/${weatherevent.weather[0].icon}.png`);
             datarow.push(`${weatherevent.weather[0].description}`);
-            datarow.push(`${Math.round(weatherevent.main.temp_min)}°C`);
-            datarow.push(`${Math.round(weatherevent.main.temp_max)}°C`);
+            datarow.push(`${Math.round(weatherevent.main.temp)}°C`);
             datarow.push(`${Math.round(weatherevent.wind.speed)} km/h`);
             results.push(datarow);
         }
@@ -78,9 +77,9 @@ function displayForecastResults(data) {
     //create results listing Days vertically
 
     //Create Header
-    for(i = 0; i < 7; i++) {
-        //"Day","Hour","Icon","Desc","Min","Max","Wind"]
-        const header = ["","","","Desc","Min","Max","Wind"];
+    for(i = 0; i < 6; i++) {
+        //"Day","Hour","Icon","Desc","Temp","Wind"]
+        const header = ["Day","","","Desc","Temp","Wind"];
         let title = header[i];
 
         //Do not create a column for Desc or Hour, They are 
@@ -100,8 +99,8 @@ function displayForecastResults(data) {
         const forecast = results[n];
 
         //For loop is required for control over a few of the combined columns
-        // columns: "Day","Hour","Icon","Desc","Min","Max","Wind"
-        for(d = 0; d < 7; d++) {
+        // columns: "Day","Hour","Icon","Desc","Temp","Wind"
+        for(d = 0; d < 6; d++) {
             let elementValue = forecast[d];
 
             //Day - Combine Day & time

@@ -531,6 +531,7 @@ footer a:hover, a:visited {
     grid-template-columns: 1fr 1fr;
     padding: 0em 0.5em;
     background-color: white;
+    padding: 20px 10px;
 }
 
 #lastModified {
@@ -599,18 +600,17 @@ footer a:hover, a:visited {
 /* Weather Forecast */
 #weather-forecast {
     display: grid;
-    grid-template-columns: repeat(5, auto);
+    grid-template-columns: repeat(4, auto);
     grid-template-rows: repeat(10, auto);
     background-color: #324560;
     color: var(--accent2-color);
 }
 
-#weather-forecast>*:nth-child(10n+2),
-#weather-forecast>*:nth-child(10n+3),
-#weather-forecast>*:nth-child(10n+4),
-#weather-forecast>*:nth-child(10n+5),
-#weather-forecast>*:nth-child(10n+6) {
-    background-color: var(--primary-color)
+#weather-forecast>*:nth-child(8n+2),
+#weather-forecast>*:nth-child(8n+3),
+#weather-forecast>*:nth-child(8n+4),
+#weather-forecast>*:nth-child(8n+5) {
+    background-color: var(--primary-color);
 }
 
 #weather-forecast .title,
@@ -622,7 +622,7 @@ footer a:hover, a:visited {
 }
 
 #forecast-title {
-    grid-column: 1/6;
+    grid-column: 1/5;
     text-align: center;
 }
 
@@ -992,7 +992,7 @@ form input.submitBtn {
     width:100%;
     display: grid;
     grid-template-columns: minmax(0,.4fr) minmax(0, .8fr) minmax(0, .8fr) minmax(0, .9fr) minmax(0, 1fr) minmax(0, .4fr);
-    font-size: .9em;
+    font-size: 1em;
     column-gap: 10px;
     padding: 10px 0;
     overflow: hidden;
@@ -1045,7 +1045,7 @@ form input.submitBtn {
                             "address    address     membership"
                             "contact    contact     membership"
                             "website    website     membership";
-    font-size: .9em;
+    font-size: 1em;
     width:90%;
     max-width: 400px;
     background-color: var(--secondary-color);
