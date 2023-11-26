@@ -16,12 +16,16 @@ function getRandomInt(max) {
 
 function spotlightMembers (chambermembers) {
 
-    //get 3 random indexes
-    const random1 = getRandomInt(chambermembers.length);
-    const random2 = getRandomInt(chambermembers.length);
-    const random3 = getRandomInt(chambermembers.length);
+    let randomIndex = [];
+    const spotlightlevels = ['Gold','Silver']
 
-    let randomIndex = [random1,random2,random3];
+    //get 3 random indexes that are in the gold/silver levels and do not repeat indexes.
+    while (randomIndex.length < 3 ) {
+        let random = getRandomInt(chambermembers.length);
+        if (spotlightlevels.includes(chambermembers[random].membershiplevel) && (!randomIndex.includes(random)))  {
+            randomIndex.push(random);
+        }
+    }
 
     randomIndex.forEach((randIndex) => {
 
