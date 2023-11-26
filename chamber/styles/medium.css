@@ -6,6 +6,19 @@
         column-gap: 2em;
     }
 
+    .hero-txt h1 {
+        font-weight: normal;
+        font-size: 2em;
+    }
+
+    .hero-txt h2 {
+        font-size: 4em;
+    }
+ 
+    .hero-txt p {
+        font-size: 1.3em;
+    }
+
     #footer-contact {
         display: grid;
         grid-template-columns: 1fr 1fr;

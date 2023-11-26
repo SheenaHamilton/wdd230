@@ -32,6 +32,9 @@
         font-size: 4em;
     }
 
+    .hero-txt p {
+        font-size: 1.3em;
+    }
     /* ============= Card Control ============= */
     #cards {
         display: grid;
