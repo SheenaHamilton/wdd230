@@ -283,8 +283,10 @@ input:checked+.slider:before {
 }
 
 .hero-txt-center {
-    bottom: 45%;
-    right: 40%;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .hero-txt {
@@ -311,6 +313,21 @@ input:checked+.slider:before {
     margin-block-start: .2em;
 }
 
+.hero-txt #join {
+    background-color: var(--accent1-color);
+    cursor: pointer;
+    border-radius: 15px;
+    width: 180px;
+    height: 44px;
+    font-size: 1.5em;
+    color: black;
+    box-shadow: 0px 0px 3px #ffffff;
+    margin: 20px auto;
+}
+
+.hero-txt #join:hover {
+    filter: brightness(110%);
+}
 
 /* ============= Menu Control ============= */
 nav {
