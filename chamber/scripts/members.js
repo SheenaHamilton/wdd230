@@ -28,8 +28,8 @@ const displayMembers = (chambermembers) => {
 
         //Website
         let website = document.createElement("a");
-        website.setAttribute("class", "website")
-        website.setAttribute("href",member.websiteurl)
+        website.setAttribute("class", "website");
+        website.setAttribute("href","#");
         website.textContent = member.websiteurl;
 
         //Logo
@@ -39,7 +39,7 @@ const displayMembers = (chambermembers) => {
         memberLogo.setAttribute("alt", `Business Logo for ${member.name}`);
         memberLogo.setAttribute("height", 100);
         memberLogo.setAttribute("width", 100);
-        memberLogo.setAttribute("loading", "lazy")
+        memberLogo.setAttribute("loading", "lazy");
 
         //Membership level img
         let memberLevel = document.createElement("img");
@@ -47,7 +47,7 @@ const displayMembers = (chambermembers) => {
         memberLevel.setAttribute("alt", `${member.membershiplevel} badge`);
         memberLevel.setAttribute("height", 100);
         memberLevel.setAttribute("width", 100);
-        memberLevel.setAttribute("loading", "lazy")
+        memberLevel.setAttribute("loading", "lazy");
 
         let membershipimg = "";
         switch(member.membershiplevel){
@@ -64,7 +64,7 @@ const displayMembers = (chambermembers) => {
                 membershipimg = "images/member-nonprofit.svg";
                 break;
         };
-        memberLevel.setAttribute("src", membershipimg)
+        memberLevel.setAttribute("src", membershipimg);
 
         //Create area for the phone number information
         let phoneNumbers = document.createElement("div");
@@ -73,7 +73,7 @@ const displayMembers = (chambermembers) => {
         member.phone.forEach((phone) => {
             //Create the phone number info and append it to the phone div
             let memberPhone = document.createElement("a");
-            memberPhone.setAttribute("href","#")
+            memberPhone.setAttribute("href","#");
             memberPhone.textContent = `${phone.type}: ${phone.phonenumber}`;
             phoneNumbers.appendChild(memberPhone);
         });
