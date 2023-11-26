@@ -444,7 +444,7 @@ nav {
 .card a {
     text-decoration: none;
     color: var(--text-color);
-    font-size: x-large;
+    font-size: large;
     font-weight: 300;
     text-align: left;
     padding: 10px;
@@ -967,6 +967,34 @@ form input.submitBtn {
 .member-card table td {
     font-size: 1.2em;
 }
+/* ============= Spotlight Members ============= */
+
+#spotlight-list.grid-view .member-info {
+    display: grid;
+    grid-template-columns:  auto auto;
+    grid-template-areas:    "logo name membership"
+                            "address address address"
+                            "website website website"
+                            "contact contact contact";
+    width: 90%;
+    padding: 20px 3% 20px 3%;
+    margin: 0 auto;
+}
+
+#spotlight-list.grid-view .logo-img {
+    width: 100%;
+    max-width: 30px;
+    height: auto;
+    margin: auto auto;
+}
+#spotlight-list a {
+    padding: 0;
+}
+
+#spotlight-list .membership {
+    height: 30px;
+    width: auto;
+}
 
 /* ============= Directory Page ============= */
 
@@ -1067,12 +1095,14 @@ form input.submitBtn {
     grid-area: logo;
     width: 100%;
     height: auto;
-
+    border: none;
 }
 
 .grid-view .member-info .membership {
     grid-area: membership;
     width: 100%;
+    max-width: 60px;
+    border: none;
     height: auto;
     margin: auto auto;
 }
