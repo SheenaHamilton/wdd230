@@ -1,0 +1,42 @@
+@media screen and (min-width:600px) {
+
+/* ============= Menu Control ============= */
+
+    .navigationmenu {
+        display: flex;
+       
+    }
+
+    #navbutton {
+        display: none;
+    }
+
+    .navigationmenu {
+        display: flex;
+        flex-direction: row;
+        width: 80%;
+        background-color: transparent;
+        margin: auto auto;
+        padding-top:20px;
+    }
+
+    .navigationmenu li {
+        display: block;
+        flex: 1 1 100%;
+    }
+
+    .navigationmenu li > a:hover {
+        background-color: var(--accent-white);
+        color: var(--accent1-color);
+        padding: 0 0 10px 0;
+    }
+
+
+    /* ============= Hero ============= */
+    .hero-txt-center {
+        text-align: center;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}

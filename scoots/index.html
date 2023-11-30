@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scootz - Rent an Adventure</title>
+    <meta name="description" content="Scoots offers rentals big and small to experience life on the island">
+    <meta name="author" content="Sheena Hamilton">
+    <link rel="icon" href="favicon.ico">
+    <link href="styles/normalize.css" rel="stylesheet">
+    <link href="styles/base.css" rel="stylesheet">
+    <link href="styles/larger.css" rel="stylesheet">
+
+    <meta property="og:title" content="Scoots">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://sheenahamilton.github.io/wdd230/scoots/images/scoots_main.webp">
+    <meta property="og:url" content="https://sheenahamilton.github.io/wdd230/scoots">
+</head>
+<body>
+    <header>
+        <div id="navheader">
+            <img class="logo" src="images/scoots.webp" alt="Scoots Logo" width="300" height="210">
+            <nav>
+                <button id="navbutton" name="navbutton"></button>
+                <ul class="navigationmenu">
+                    <li><a href="#" class="active">Home</a></li>
+                    <li><a href="rentals.html">Rentals</a></li>
+                    <li><a href="reservations.html">Reservations</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><div><a href="#"><img class="social" src="images/facebook.svg" alt="facebook icon"></a>
+                             <a href="#"><img class="social" src="images/instagram.svg" alt="instagram icon"></a></div></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="hero-img">
+            <picture>
+                <source srcset="images/ScooterSea1800.webp" media="(max-width: 1000px)">
+                <img src="images/ScooterSea.webp" alt="Scooter by the sea" width="2000" height="1021">
+            </picture>
+            <div class="hero-txt hero-txt-center impact">
+                <p>Experience the <span class="accent">authentic</span> Cozumel</p>
+                <button id="reserve" name="reserve">Reserve Today</button>
+            </div>
+        </div>
+        <div id="main-content">
+            <p>here is some text</p>
+        </div>
+    </main>
+    <footer>
+        <div id="footer-info">
+            <img class="logo" src="images/scoots.webp" alt="Scoots Logo" width="300" height="210">
+            <p>Contact us at: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam ipsa, natus voluptas quibusdam accusantium nesciunt deleniti quaerat dignissimos, delectus corporis doloribus dolores suscipit unde debitis.</p>
+            <div>site map
+                <ul><li>Home</li>
+                    <li>Rentals</li>
+                    <li>Reserve</li>
+                    <li>Contact</li>
+                </ul>
+            </div>
+        </div>
+        <div id="footer-end">
+            <p>Sheena Hamilton: WDD230 Final Project</p>
+            <p id="modified"></p>
+        </div>
+    </footer>
+</body>
+<script src="scripts/nav.js"></script>
+<script src="scripts/modified.js"></script>
+</html>
