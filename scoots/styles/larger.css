@@ -1,4 +1,4 @@
-@media screen and (min-width:600px) {
+@media screen and (min-width:1000px) {
 
 /* ============= Menu Control ============= */
 
@@ -38,5 +38,56 @@
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
+    }
+
+    #footer-info {
+        display: grid;
+        grid-template-columns: .8fr 1fr .5fr 1fr 1fr;
+        width: 95%;
+        margin: auto auto;
+        column-gap: 10px;
+        text-align: left;
+    }
+
+    #footer-end {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    footer .logo {
+        margin: 0 0;
+    }
+
+/* ============= weather  ============= */
+    #weather {
+        display: grid;
+        grid-template-columns: 1.5fr 1fr;
+    }
+
+    #photoheader-block {
+        width: 90%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 2%;
+    }
+    .photoquote-block {
+        width: 90%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 2%;
+    }
+
+    /* ============= Reservations Page ============= */
+
+    #form-reserve {
+        width: 90%;
+        margin: 0 auto ;
+
+    }
+    #reserveRental {
+        display: grid;
+        grid-template-columns: 1.3fr 1fr;
+        width: 90%;
+        margin: 20px auto 40px auto;
     }
 }

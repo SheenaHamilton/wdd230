@@ -1,0 +1,149 @@
+{
+    "rentals": [
+        {
+            "type" : "Honda Metro Scooter",
+            "maxpeople" : 1,
+            "image": "images/honda-metro.webp",
+            "description":"Perfect for solo exploration and relaxing adventures, the Honda Metro Scooter is your key to breezy rides through the vibrant streets of Cozumel. Take a trip to the beach or a scenic ride down the coast.",
+            "features": [
+                {
+                    "value": "49cc Engine"
+                }
+            ],
+            "price": [
+                {
+                    "type" : "Reservation",
+                    "halfday" : 20,
+                    "allday" : 30
+                },
+                {
+                    "type" : "Walk-in",
+                    "halfday" : 25,
+                    "allday" : 35
+                }
+            ]
+        }, {
+            "type" : "Honda Dio Scooter",
+            "maxpeople" : 2,
+            "image": "images/honda-duo.webp",
+            "description":"Cruise the scenic roads of Cozumel with a touch of style on the Honda Dio Scooter. Whether you're planning to discover hidden gems or enjoy a spontaneous beach ride, this scooter offers flexibility for your island adventure.",
+            "features": [
+                {
+                    "value": "110cc Engine"
+                }
+            ],
+            "price": [
+                {
+                    "type" : "Reservation",
+                    "halfday" : 30,
+                    "allday" : 40
+                },
+                {
+                    "type" : "Walk-in",
+                    "halfday" : 35,
+                    "allday" : 45
+                }
+
+            ]
+        }, {
+            "type" : "Honda PCX150 Scooter",
+            "maxpeople" : 2,
+            "image": "images/honda-pcx150.webp",
+            "description":"Embrace the spirit of Cozumel with the Honda PCX150 Scooter, blending sleek design with island-friendly performance. Whether you're exploring archaeological sites or coasting along the shoreline, this scooter will take you there.",
+            "features": [
+                {
+                    "value": "149cc Engine"
+                }
+            ],
+            "price": [
+                {
+                    "type" : "Reservation",
+                    "halfday" : 40,
+                    "allday" : 50
+                },
+                {
+                    "type" : "Walk-in",
+                    "halfday" : 45,
+                    "allday" : 55
+                }
+
+            ]
+        }, {
+            "type" : "Honda Pioneer ATV",
+            "maxpeople" : 4,
+            "image": "images/2024-pioneer-700-4.webp",
+            "description":"Dive into Cozumel's off-road wonders with the Honda Pioneer ATV, accommodating up to four thrill-seekers. Whether you've planned a jungle excursion or decide on a spontaneous off-road journey, this ATV promises an unforgettable island adventure.",
+            "features": [
+                {
+                    "value": "Side-by-Side"
+                }
+            ],
+            "price": [
+                {
+                    "type" : "Reservation",
+                    "halfday" : 50,
+                    "allday" : 70
+                },
+                {
+                    "type" : "Walk-in",
+                    "halfday" : 60,
+                    "allday" : 80
+                }
+
+            ]
+        }, {
+            "type" : "Jeep Wrangler - 4 door",
+            "maxpeople" : 5,
+            "image": "images/jeep-wrangler-4.webp",
+            "description":"Experience the freedom of Cozumel's coastal roads with the Jeep Wrangler 4-door, equipped with air conditioning for a comfortable island drive. This rugged vehicle ensures a memorable exploration of the island.",
+            "features": [
+                {
+                    "value": "Air-Conditioning"
+                },
+                {
+                    "value": "Manual Transmission"
+                }
+            ],
+            "price": [
+                {
+                    "type" : "Reservation",
+                    "halfday" : 70,
+                    "allday" : 100
+                },
+                {
+                    "type" : "Walk-in",
+                    "halfday" : 85,
+                    "allday" : 125
+                }
+
+            ]
+        }, {
+            "type" : "Jeep Wrangler - 2 door",
+            "maxpeople" : 4,
+            "image": "images/jeep-wrangler-2.webp",
+            "description":"Unleash the spirit of Cozumel in the Jeep Wrangler 2-door, blending classic style with off-road capabilities for groups of four. Whether you're planning to visit Mayan ruins or deciding on a spontaneous trip to the beaches, this Jeep offers an exciting island journey.",
+            "features": [
+                {
+                    "value": "Open Air"
+                },
+                {
+                    "value": "Manual Transmission"
+                }
+            ],
+            "price": [
+                {
+                    "type" : "Reservation",
+                    "halfday" : 60,
+                    "allday" : 85
+                },
+                {
+                    "type" : "Walk-in",
+                    "halfday" : 70,
+                    "allday" : 90
+                }
+
+            ]
+        }
+
+    ]
+}

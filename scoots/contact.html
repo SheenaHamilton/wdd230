@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Scootz - Rent an Adventure</title>
-    <meta name="description" content="Scoots offers rentals big and small to experience life on the island">
+    <title>Scootz - Contact Us</title>
+    <meta name="description" content="Scoots contact information, addresses, and maps.">
     <meta name="author" content="Sheena Hamilton">
     <link rel="icon" href="favicon.ico">
     <link href="styles/normalize.css" rel="stylesheet">
@@ -19,19 +19,15 @@
 </head>
 <body>
     <header>
-        <div id="weather-banner" >
-            <p>Temperatures today will reach <span id="tempmax"></span></p>
-            <button id="bannerclose">✕</button>
-        </div>
         <div id="navheader">
             <img class="logo" src="images/scoots.webp" alt="Scoots Logo" width="300" height="210">
             <nav>
                 <button id="navbutton" name="navbutton"></button>
                 <ul class="navigationmenu">
-                    <li><a href="#" class="active">Home</a></li>
+                    <li><a href="index.html">Home</a></li>
                     <li><a href="rentals.html">Rentals</a></li>
                     <li><a href="reservations.html">Reservations</a></li>
-                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="#" class="active">Contact</a></li>
                     <li><div><a href="#"><img class="social" src="images/facebook.svg" alt="facebook icon"></a>
                              <a href="#"><img class="social" src="images/instagram.svg" alt="instagram icon"></a></div></li>
                 </ul>
@@ -39,42 +35,66 @@
         </div>
     </header>
     <main>
-        <div class="hero-img">
+        <div class="hero-img pagetitle">
             <picture>
-                <source srcset="images/ScooterSea1800.webp" media="(max-width: 1000px)">
-                <img src="images/ScooterSea.webp" alt="Scooter by the sea" width="2000" height="1021">
+                <source srcset="images/ScooterSeaHeader1800.webp" media="(max-width: 1000px)">
+                <img src="images/ScooterSeaHeader1800.webp" alt="Scooter by the sea" width="1800" height="423">
             </picture>
-            <div class="hero-txt hero-txt-center impact ">
-                <p>Experience the <span class="accent">authentic</span> Cozumel</p>
-                <button id="reserve" name="reserve">Reserve Today</button>
+            <div class="hero-txt hero-txt-center impact">
+                <h1>Contact<span class="accent"> Us</span></h1>
             </div>
         </div>
-
         <div id="main-content">
-            <div id="weather" class="shadow">
-                <div id="weather-current" class="centered">
-                    <p id="place">Today in Cozumel</p>
-                    <img id="weather-icon" src="#" alt="Description for the weather event" width="150" height="150">
-                    <div><p id="current-temp"></p><p id="humidity"></p><p id="imgdesc"></p></div>
-                    <p id="desc"></p>
-                </div>
-                <div id="weather-forecast">
-                </div>
-            </div>
-
-            <h2 class="impact"><img src="images/palm60x66.webp" alt="Palm Tree" width="60" height="66">Explore Cozumel <span class="accent">in Style </span>with Our Scooter & Adventure Rentals</h2>
-            <div class="photoquote-block">
-                <div>
-                    <p class="quote"> Welcome to the tropical paradise of Cozumel, where our endless blue horizons and warm sands invite the spirit of adventure.</p>
-                        
-                    <p class="quote-normal">Unleash the thrill of exploration on two wheels with our chic scooter rentals or go off-roading with our ATV and Jeep rentals.<br><br> Imagine the wind in your hair, the sun on your face, and the <span class="accent">freedom</span> to discover our beautiful island at your own pace.</p>
-                </div>
-                <img class="photograph" src="images/pexels-apg-graphics-1603410.webp" alt="" width="500" height="333" loading="lazy">
-            </div>
-            <p id="explore"class="impact">Explore our Fleet</p>
-            <p id="walkin" class="impact">Walk-in Customers <span class="accent impact">Welcome!</span></p>
-            <div id="rentals" class="home cards">
+            
+            <div id="contact">
                 
+                <div>
+                    <h2>Our Locations</h2>
+                    <div class="contact-block">
+                        <h3 class="impact">Ferry Dock Location</h3>
+                        <div class="addressblock">
+                            <address>Calle Marina 123
+                                <br>Colonia Centro
+                                <br>77600 Cozumel, Quintana Roo
+                                <br>Mexico
+                            </address>
+                            <a href="#">phone +52 987 123 4567</a>
+                        </div>
+                    </div>  
+                
+                    <div class="contact-block">
+                        <h3 class="impact">Terminal Location</h3>
+                        <div class="addressblock">
+                            <address>Avenida de los Cruceros 456
+                                <br>Colonia Puerta Maya
+                                <br>77605 Cozumel, Quintana Roo
+                                <br>Mexico
+                            </address>
+                            <a href="#">phone +52 987 987 6543</a>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <h2>We'd <span class="accent">love </span> to hear from you!</h2>
+                    <div id="form-reserve">
+                        <form method="get" action="messagesent.html">
+                            <fieldset>
+                                <label class="top">Name<input type="text" name="name" id="name" required></label>
+                                <label class="top">Email<input type="email" name="email" id="email" placeholder="youremail@gmail.com"
+                                        required></label>
+                                <label class="top">Comments <textarea name="comments" id="comments"></textarea></label>
+                            </fieldset>
+                
+                            <input type="submit" value="Send Message" class="submitBtn">
+                        </form>
+                    </div>
+                </div>
+                <div class="maparea">
+                    <iframe class="map"
+                        src="https://www.google.com/maps/d/u/0/embed?mid=1jibV_r5IVfcrByXrWc54Gs1DYTb5K8Q&ehbc=2E312F&noprof=1"
+                        width="640" height="480" loading="lazy"></iframe>
+                </div>   
+
             </div>
         </div>
     </main>
@@ -118,10 +138,6 @@
         </div>
     </footer>
 <script src="scripts/nav.js"></script>
-<script src="scripts/hero.js"></script>
 <script src="scripts/modified.js"></script>
-<script src="scripts/weather.js"></script>
-<script src="scripts/banner.js"></script>
-<script src="scripts/rentals.js"></script>
 </body>
 </html>

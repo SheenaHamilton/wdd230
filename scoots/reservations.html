@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scootz - Reservations</title>
+    <meta name="description" content="Scoots start a reservation for your island adventure.">
+    <meta name="author" content="Sheena Hamilton">
+    <link rel="icon" href="favicon.ico">
+    <link href="styles/normalize.css" rel="stylesheet">
+    <link href="styles/base.css" rel="stylesheet">
+    <link href="styles/medium.css" rel="stylesheet">
+    <link href="styles/larger.css" rel="stylesheet">
+
+    <meta property="og:title" content="Scoots Adventure Rentals">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://sheenahamilton.github.io/wdd230/scoots/images/pexels-apg-graphics-1603410.webp">
+    <meta property="og:url" content="https://sheenahamilton.github.io/wdd230/scoots">
+</head>
+<body>
+    <header>
+        <div id="navheader">
+            <img class="logo" src="images/scoots.webp" alt="Scoots Logo" width="300" height="210">
+            <nav>
+                <button id="navbutton" name="navbutton"></button>
+                <ul class="navigationmenu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="rentals.html">Rentals</a></li>
+                    <li><a href="#" class="active">Reservations</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><div><a href="#"><img class="social" src="images/facebook.svg" alt="facebook icon"></a>
+                             <a href="#"><img class="social" src="images/instagram.svg" alt="instagram icon"></a></div></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="hero-img pagetitle">
+            <picture>
+                <source srcset="images/ScooterSeaHeader1800.webp" media="(max-width: 1000px)">
+                <img src="images/ScooterSeaHeader1800.webp" alt="Scooter by the sea" width="1800" height="423">
+            </picture>
+            <div class="hero-txt hero-txt-center impact">
+                <h1>Book a<span class="accent"> Reservation</span></h1>
+            </div>
+        </div>
+        <div id="reserveRental">
+            <div id="agreement">
+                <h2 class="impact">Rental Services and Agreements</h2>
+                <p>Welcome to Scoots Adventure Rentals, your premier choice for scooter rentals in the beautiful island paradise of
+                Cozumel! <br><br>We are thrilled to offer you an exhilarating and convenient way to explore the island's enchanting landscapes
+                and vibrant streets. Before embarking on your adventure, please review the following terms and conditions. Our commitment to your safety and satisfaction is very important to us, and we look forward to providing you with an unforgettable journey through Cozumel.</p>
+                <ul>
+                    <li>A $50 security deposit is required to confirm reservations.</li>
+                    <li>A valid drivers license is required in hand at the time of rental.</li>
+                    <li>No one under the age of 12 years of age are allowed to ride on the scooters.</li>
+                    <li>Fuel charge is not included.</li>
+                    <li>Unlimited mileage.</li>
+                    <li>Liability insurance is included.</li>
+                    <li>Damage insurance is available for purchase.</li>
+                    <li>Free delivery to Cozumel hotels or Airbnbs for 2+ day rentals.</li>
+                    <li>Payment via Google Pay, Apple Pay, cash, credit card, debit card, or venmo.</li>
+                    <li>Rentals may be returned to either physical location.</li>
+                </ul>
+                <div class="photoquote-block">
+                    <div>
+                        <p class="quote-large"> "We travel not to escape life, <br><br>but for life to <br><span class="accent">not escape us</span> " </p>
+                    </div>
+                    <img class="photograph" src="images/pexels-arthur-brognoli-2406778.webp" alt="Pink Scooter by pink building" width="333" height="500"
+                        loading="lazy">
+                </div>
+
+            </div>
+            <div id="form-reserve">
+                <h2 class="impact">Reservation Application </h2>
+                <form method="get" action="thankyou.html">
+            
+                    <fieldset>
+                        <legend>Rental Information</legend>
+                        <label class="top">Rental Date<input type="date" name="rentalDate" id="rentalDate" required></label>
+                        <label class="top">Rental Period (days) <input type="text" name="rentalPeriod" id="rentalPeriod" pattern="[0-9]{1,2}" required></label>
+                        <label class="top">Rental Type<select name="rentalType" id="rentalType" required> 
+                            <option value="HondaMetro">Honda Metro Scooter</option>
+                            <option value="HondaDio">Honda Dio Scooter</option>
+                            <option value="HondaPCX150">Honda PCX150 Scooter</option>
+                            <option value="HondaATV">Honda Pioneer ATV</option>
+                            <option value="Jeep2">Jeep Wrangler - 2 door</option>
+                            <option value="Jeep4">Jeep Wrangler - 4 door</option>
+                        </select></label>
+                        <label class="top">How Many?<select name="number" id="number" required>
+                            <option value="1" selected>1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select></label>
+                    </fieldset>
+            
+                    <fieldset>
+                        <legend>Personal Information</legend>
+                            <label class="top">Name<input type="text" name="name" id="name" required></label>
+                            <label class="top">Phone Number<input type="tel" name="phone" id="phone" placeholder="1231231234" required></label>
+                            <label class="top">Email<input type="email" name="email" id="email" placeholder="youremail@gmail.com" required></label>
+                            <label class="top">Home State/Country<input type="text" name="stateCountry"id="stateCountry"></label>
+                            <label class="top">Cruise Line<input type="text" name="cruiseLine" id="cruiseLine"></label>
+                            <label class="top">Special accommodations or comments <textarea name="comments"id="comments"></textarea></label>
+                    </fieldset>
+            
+                    <input type="submit" value="Reserve" class="submitBtn">
+                </form>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div id="footer-info">
+            <img class="logo" src="images/scoots.webp" alt="Scoots Logo" width="300" height="210">
+            <div>
+                <p>Scoots Adventure Rentals</p>
+                <p class="accent">Making your adventures a reality</p>
+                <a href="#"><img class="social" src="images/facebook.svg" alt="facebook icon"></a>
+                <a href="#"><img class="social" src="images/instagram.svg" alt="instagram icon"></a>
+            </div>
+            <div id="site-map">
+                <a href="index.html">Home</a>
+                <a href="rentals.html">Rentals</a>
+                <a href="reservations.html">Reservations</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="addressblock">
+                <p>Ferry Dock Location</p>
+                <address>Calle Marina 123
+                    <br>Colonia Centro
+                    <br>77600 Cozumel, Quintana Roo
+                    <br>Mexico</address>
+                <a href="contact.html">Map & Directions</a>
+                <a href="#">phone +52 987 123 4567</a>
+            </div>
+            <div class="addressblock">
+                <p>Terminal Location</p>
+                <address>Avenida de los Cruceros 456
+                    <br>Colonia Puerta Maya
+                    <br>77605 Cozumel, Quintana Roo
+                    <br>Mexico</address>
+                <a href="contact.html">Map & Directions</a>
+                <a href="#">phone +52 987 987 6543</a>
+            </div>
+        </div>
+        <div id="footer-end">
+            <p>Sheena Hamilton: WDD230 Final Project</p>
+            <p id="modified"></p>
+        </div>
+    </footer>
+<script src="scripts/nav.js"></script>
+<script src="scripts/modified.js"></script>
+</body>
+</html>

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Scootz - Rent an Adventure</title>
+    <title>Scootz - Rental Information</title>
     <meta name="description" content="Scoots offers rentals big and small to experience life on the island">
     <meta name="author" content="Sheena Hamilton">
     <link rel="icon" href="favicon.ico">
@@ -19,17 +19,13 @@
 </head>
 <body>
     <header>
-        <div id="weather-banner" >
-            <p>Temperatures today will reach <span id="tempmax"></span></p>
-            <button id="bannerclose">✕</button>
-        </div>
         <div id="navheader">
             <img class="logo" src="images/scoots.webp" alt="Scoots Logo" width="300" height="210">
             <nav>
                 <button id="navbutton" name="navbutton"></button>
                 <ul class="navigationmenu">
-                    <li><a href="#" class="active">Home</a></li>
-                    <li><a href="rentals.html">Rentals</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#" class="active">Rentals</a></li>
                     <li><a href="reservations.html">Reservations</a></li>
                     <li><a href="contact.html">Contact</a></li>
                     <li><div><a href="#"><img class="social" src="images/facebook.svg" alt="facebook icon"></a>
@@ -39,42 +35,29 @@
         </div>
     </header>
     <main>
-        <div class="hero-img">
+        <div class="hero-img pagetitle">
             <picture>
-                <source srcset="images/ScooterSea1800.webp" media="(max-width: 1000px)">
-                <img src="images/ScooterSea.webp" alt="Scooter by the sea" width="2000" height="1021">
+                <source srcset="images/ScooterSeaHeader1800.webp" media="(max-width: 1000px)">
+                <img src="images/ScooterSeaHeader1800.webp" alt="Scooter by the sea" width="1800" height="423">
             </picture>
-            <div class="hero-txt hero-txt-center impact ">
-                <p>Experience the <span class="accent">authentic</span> Cozumel</p>
-                <button id="reserve" name="reserve">Reserve Today</button>
+            <div class="hero-txt hero-txt-center impact">
+                <h1>Our<span class="accent"> Rentals</span></h1>
             </div>
         </div>
-
         <div id="main-content">
-            <div id="weather" class="shadow">
-                <div id="weather-current" class="centered">
-                    <p id="place">Today in Cozumel</p>
-                    <img id="weather-icon" src="#" alt="Description for the weather event" width="150" height="150">
-                    <div><p id="current-temp"></p><p id="humidity"></p><p id="imgdesc"></p></div>
-                    <p id="desc"></p>
-                </div>
-                <div id="weather-forecast">
-                </div>
-            </div>
-
-            <h2 class="impact"><img src="images/palm60x66.webp" alt="Palm Tree" width="60" height="66">Explore Cozumel <span class="accent">in Style </span>with Our Scooter & Adventure Rentals</h2>
-            <div class="photoquote-block">
+            <div id="photoheader-block">
+                <img class="photograph" src="images/pexels-ajay-donga-2174656.webp" alt="Couple scooting down road" width="800" height="533" loading="lazy">
                 <div>
-                    <p class="quote"> Welcome to the tropical paradise of Cozumel, where our endless blue horizons and warm sands invite the spirit of adventure.</p>
-                        
-                    <p class="quote-normal">Unleash the thrill of exploration on two wheels with our chic scooter rentals or go off-roading with our ATV and Jeep rentals.<br><br> Imagine the wind in your hair, the sun on your face, and the <span class="accent">freedom</span> to discover our beautiful island at your own pace.</p>
+                    <h2 class="impact"><img src="images/palm60x66.webp" alt="Palm Tree" width="60" height="66">Why <span class="accent">Scoot</span> with Us?</h2>
+                    <ul>
+                        <li><span class="impact">Contemporary Scoots:</span> Glide through Cozumel in style on our modern and sleek scooters.</li>
+                        <li><span class="impact">Island-Friendly Prices:</span> Affordable rates for your island adventure, make the most of your Cozumel adventure without breaking the bank.</li>
+                        <li><span class="impact">Flexible Options:</span> Whether you're a solo explorer or cruising with a companion, our fleet has the perfect ride for every adventure.</li>
+                    </ul>
                 </div>
-                <img class="photograph" src="images/pexels-apg-graphics-1603410.webp" alt="" width="500" height="333" loading="lazy">
             </div>
-            <p id="explore"class="impact">Explore our Fleet</p>
-            <p id="walkin" class="impact">Walk-in Customers <span class="accent impact">Welcome!</span></p>
-            <div id="rentals" class="home cards">
-                
+            <h2 class="impact">Find your Ride</h2>
+            <div id="rentals" class="cards">
             </div>
         </div>
     </main>
@@ -118,10 +101,7 @@
         </div>
     </footer>
 <script src="scripts/nav.js"></script>
-<script src="scripts/hero.js"></script>
 <script src="scripts/modified.js"></script>
-<script src="scripts/weather.js"></script>
-<script src="scripts/banner.js"></script>
 <script src="scripts/rentals.js"></script>
 </body>
 </html>

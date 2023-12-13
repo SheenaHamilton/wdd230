@@ -1,0 +1,34 @@
+@media screen and (min-width:600px) {
+
+/* ============= footer ============= */
+    #footer-info {
+        display: grid;
+        grid-template-columns: 1fr 1fr .5fr;
+        row-gap: 20px;
+        column-gap: 10px;
+        text-align: left;
+    }
+
+    #footer-end {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    footer .logo {
+        margin: 0 0;
+    }
+    /* ============= weather ============= */
+    #weather {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    #photoheader-block {
+        width: 90%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 2%;
+    }
+
+}
+
