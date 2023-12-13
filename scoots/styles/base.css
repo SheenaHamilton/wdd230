@@ -262,11 +262,11 @@ nav {
 }
 
 .navigationmenu li > a.active::before {
-    content: url('/scoots/images/palmicon.webp');
+    content: url('scoots/images/palmicon.webp');
 }
 
 .navigationmenu li > a::before {
-    content: url('/scoots/images/palm-ph.webp');
+    content: url('scoots/images/palm-ph.webp');
 }
 
 /* ============= Social Media ============= */
