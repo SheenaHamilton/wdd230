@@ -82,7 +82,7 @@ const displayRentals = (rentals) => {
 
             //Reserve Button
             let reserveButton = document.createElement("button");
-            reserveButton.setAttribute("id","book");
+            reserveButton.setAttribute("class","book");
             reserveButton.innerText = "Reserve Now";
 
             //Create the event listener for the button.
