@@ -80,6 +80,7 @@
                         <label class="top">Rental Date<input type="date" name="rentalDate" id="rentalDate" required></label>
                         <label class="top">Rental Period (days) <input type="text" name="rentalPeriod" id="rentalPeriod" pattern="[0-9]{1,2}" required></label>
                         <label class="top">Rental Type<select name="rentalType" id="rentalType" required> 
+                            <option value="">Choose vehicle</option>
                             <option value="HondaMetro">Honda Metro Scooter</option>
                             <option value="HondaDio">Honda Dio Scooter</option>
                             <option value="HondaPCX150">Honda PCX150 Scooter</option>
@@ -88,7 +89,8 @@
                             <option value="Jeep4">Jeep Wrangler - 4 door</option>
                         </select></label>
                         <label class="top">How Many?<select name="number" id="number" required>
-                            <option value="1" selected>1</option>
+                            <option value="" >Select quantity</option>
+                            <option value="1">1</option>
                             <option value="2">2</option>
                             <option value="3">3</option>
                             <option value="4">4</option>
@@ -101,9 +103,9 @@
                             <label class="top">Name<input type="text" name="name" id="name" required></label>
                             <label class="top">Phone Number<input type="tel" name="phone" id="phone" placeholder="1231231234" required></label>
                             <label class="top">Email<input type="email" name="email" id="email" placeholder="youremail@gmail.com" required></label>
-                            <label class="top">Home State/Country<input type="text" name="stateCountry"id="stateCountry"></label>
+                            <label class="top">Home State/Country<input type="text" name="stateCountry" id="stateCountry"></label>
                             <label class="top">Cruise Line<input type="text" name="cruiseLine" id="cruiseLine"></label>
-                            <label class="top">Special accommodations or comments <textarea name="comments"id="comments"></textarea></label>
+                            <label class="top">Special accommodations or comments <textarea name="comments" id="comments"></textarea></label>
                     </fieldset>
             
                     <input type="submit" value="Reserve" class="submitBtn">
