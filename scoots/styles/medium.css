@@ -23,11 +23,9 @@
         grid-template-columns: 1fr;
     }
 
-    #photoheader-block {
-        width: 90%;
+    #weather-current {
         display: grid;
-        grid-template-columns: 1fr 1fr;
-        padding: 2%;
+        grid-template-columns: 1fr 1fr 1fr 1.5fr;
     }
 
 }

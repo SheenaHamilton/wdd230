@@ -38,6 +38,7 @@ const displayRentals = (rentals) => {
 
         //Rental Description
         let desc = document.createElement("p");
+        desc.setAttribute("class", "rent-desc")
         desc.textContent = rental.description;
 
         //Append the elements in the appropriate order

@@ -74,7 +74,16 @@ p {
 }
 
 h1 {
-    font-size: 3rem;
+    font-size: 2rem;
+}
+
+h1.impact {
+    text-align: center;
+    font-size: 2rem;
+}
+
+h1 .accent {
+    font-size: 3.2rem;
 }
 
 h2.impact {
@@ -89,6 +98,16 @@ h2 .accent {
 h2 {
     font-size: 2rem;
     text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+a:hover {
+    color: var(--secondary-color);
 }
 
 .right-align {
@@ -243,6 +262,8 @@ nav {
     color: var(--primary-color);
     font-weight: 600;
     padding: 5px 0;
+    line-height: 58px;
+    white-space: nowrap;
 }
 
 .navigationmenu li div {
@@ -266,10 +287,11 @@ nav {
 .navigationmenu li > a.active::before {
     content: url('../images/palmicon.webp');
 }
-
+/*
 .navigationmenu li > a::before {
     content: url('../images/palm-ph.webp');
 }
+*/
 
 /* ============= Social Media ============= */
 
@@ -324,8 +346,8 @@ nav {
     filter:brightness(110%);
 }
 
-.pagetitle .hero-txt  .accent {
-    font-size: 5rem;
+.pagetitle .hero-txt .accent {
+    font-size: 4rem;
 }
 
 .pagetitle .hero-txt.impact {
@@ -411,18 +433,26 @@ footer a:hover {
 }
 
 #footer-end {
-    background-color: var(--secondary-color);
-    color: var(--accent-white);
     display: flex;
     flex-direction: column;
-    padding: 20px;
-    margin: 40px auto 0 auto;
-}
-
-#footer-end p {
+    background-color: var(--secondary-color);
     color: var(--accent-white);
+    width: 95%;
+    padding: 20px 2%;
+    margin: 40px auto 0 auto;
+    line-height: 44px;
+    text-align: center;
 }
 
+#footer-end p,
+#footer-end a {
+    color: var(--accent-white);
+    padding: 0 0;
+}
+
+#footer-end a:hover {
+    color: var(--accent2-color);
+}
 
 /* ============= Card ============= */
 
@@ -452,6 +482,10 @@ footer a:hover {
     box-shadow: none;
 }
 
+.card h3{
+    min-height: 60px;
+}
+
 .home .card .rentalImg {
     width: 90%;
     padding: 5%;
@@ -475,10 +509,12 @@ footer a:hover {
 .card .feature {
     text-align: left;
     font-weight: 600;
+    min-height: 40px;
 }
 
-.card p {
+.card .rent-desc {
     text-align: left;
+    min-height: 150px;
 }
 
 .home .card p {
@@ -548,7 +584,7 @@ footer a:hover {
 #weather {
     display: grid;
     width: 100%;
-    grid-template-columns: 1.5fr 1fr;
+    grid-template-columns: 1fr;
     text-align: center;
     margin: 20px auto 20px auto;
     font-weight: 600;
@@ -558,8 +594,7 @@ footer a:hover {
 #weather-current {
     display: grid;
     width: 100%;
-    grid-template-columns: 1fr 1fr 1fr 1.5fr;
-    
+    grid-template-columns: 1fr;
     margin: auto auto;
 }
 
@@ -587,7 +622,7 @@ footer a:hover {
 #weather-current #desc{
     margin: auto auto;
     width: 95%;
-    padding: 0 2.5%;
+    padding: 20px 2.5%;
 }
 
 /* Weather Forecast */
@@ -669,7 +704,8 @@ footer a:hover {
 #reserveRental {
     display: grid;
     grid-template-columns: 1fr;
-    margin-bottom: 40px;
+    width: 95%;
+    margin: 0 2% 40px 2%;
 }
 
 #form-reserve {
@@ -744,7 +780,6 @@ form input.submitBtn {
 }
 
 #thank-you {
-    width: 90%;
     max-width: 1000px;
     margin: auto auto;
 }
@@ -762,13 +797,13 @@ form input.submitBtn {
 /* ================= Contact Page =====================*/
 #contact {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
 }
+
 .map {
     width: 100%;
 }
 .maparea {
-    grid-column: 1/3;
     margin: 40px 5%;
 }
 
@@ -783,3 +818,14 @@ form input.submitBtn {
     font-size: 1.2rem;
 }
 
+/* ================= Attributions Page =====================*/
+
+#attributions {
+    width: 80%;
+    margin: auto auto;
+}
+
+#attributions li {
+    margin: 20px 0;
+    word-wrap: break-word;
+}
